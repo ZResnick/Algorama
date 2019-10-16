@@ -15,6 +15,7 @@ Output: 5->4->3->2->1->NULL
 3, 2, 1   4, 5
 */
 
+/* First Attemp which works
 var reverseList = function(head) {
   let temp = [];
   while (head) {
@@ -32,6 +33,21 @@ var reverseList = function(head) {
     node = {};
   }
   return newHead;
+};
+*/
+
+//Better Attempt:
+var reverseList = function(head) {
+  let prev = null;
+  let current = head;
+  let next = null;
+  while (current) {
+    next = current.next;
+    current.next = prev;
+    prev = current;
+    current = next;
+  }
+  return prev;
 };
 
 const input = {
