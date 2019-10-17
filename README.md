@@ -21,3 +21,7 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
   - Tortoise and the Hare method
 - Remove Duplicates (EE)
 - Remove All Targeted Values from a Linked List (E)
+
+### Array Manipulation
+
+- Minimum Jumps to end of Array (M)
