@@ -15,3 +15,6 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 ### Linked Lists
 
 - Swap Nodes (M)
+- Reverse a Linked List (E)
+- Is there a loop in this Linekd List? (E).
+  - Tortoise and the Hare method
