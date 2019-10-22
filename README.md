@@ -31,7 +31,8 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 
 ### Binary Trees
 
-Note you can require a BST creator from ./treeCreator for testing purposes using -----> const bst = require(./)treeCreator)
+Note you can require a BST creator from ./treeCreator for testing purposes using -----> const bst = require('./treeCreator')
 
 - Simple Binary Search (E)
 - Merge Binary Trees (E)
+- Max Depth of a Binary Tree
