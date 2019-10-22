@@ -29,6 +29,9 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 - Binary Search (E)
 - Minimum Jumps to end of Array (M)
 
-### Binary Search Trees
+### Binary Trees
+
+Note you can require a BST creator from ./treeCreator for testing purposes using -----> const bst = require(./)treeCreator)
 
 - Simple Binary Search (E)
+- Merge Binary Trees (E)
