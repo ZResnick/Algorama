@@ -56,3 +56,4 @@ console.log(
 console.log(areIsomorphic('asgasg', 'chychy'));
 console.log(areIsomorphic('fhtyg', 'pppasdj'));
 console.log(areIsomorphic('wojdbvwpdv', 'celqbvfeqbcvn2eq'));
+console.log(areIsomorphic('egg', 'dad'));

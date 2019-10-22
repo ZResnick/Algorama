@@ -26,4 +26,9 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 
 ### Array Manipulation
 
+- Binary Search (E)
 - Minimum Jumps to end of Array (M)
+
+### Binary Search Trees
+
+- Simple Binary Search (E)
