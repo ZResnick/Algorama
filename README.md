@@ -28,6 +28,7 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 
 - Binary Search (E)
 - Minimum Jumps to end of Array (M)
+- Valid Sudoku Solution (M)
 
 ### Binary Trees
 
