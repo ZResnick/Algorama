@@ -18,7 +18,7 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 
 - Swap Nodes (M)
 - Reverse a Linked List (E)
-- Is there a loop in this Linekd List? (E).
+- Is there a loop in this Linked List? (E).
   - Tortoise and the Hare method
 - Remove Duplicates (EE)
 - Remove All Targeted Values from a Linked List (E)
@@ -30,6 +30,7 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 - Minimum Jumps to end of Array (M)
 - Valid Sudoku Solution (M)
 - Number of Islands (M)
+- Merge Sort (E)
 
 ### Binary Trees
 
