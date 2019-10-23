@@ -21,41 +21,37 @@ const grid = [
 console.log(numIslands(grid));    // 3
 */
 
-const helper = (grid, coords) => {
-  let row = coords[0];
-  let col = coords[1];
+const helper = (grid, row, col) => {
   grid[row][col] = 0;
-  let right;
-  let down;
-  let width = grid[0].length;
-  let height = grid.length;
-  if (col <= width - 2) {
-    right = grid[row][col + 1];
+  if (col <= grid[0].length - 2) {
+    if (grid[row][col + 1] === 1) {
+      helper(grid, row, col + 1);
+    }
   }
-  if (row <= height - 2) {
-    down = grid[row + 1][col];
-  }
-  if (right === 1) {
-    helper(grid, [row, col + 1]);
-  }
-  if (down === 1) {
-    helper(grid, [row + 1, col]);
+  if (row <= grid.length - 2) {
+    if (grid[row + 1][col] === 1) {
+      helper(grid, row + 1, col);
+    }
   }
 };
 
 const numOfIslands = grid => {
   let counter = 0;
   for (let row = 0; row < grid.length; row++) {
+    //iterate through rows
     for (let col = 0; col < grid[0].length; col++) {
+      //with each row, iterate through columns
       if (grid[row][col] === 1) {
-        helper(grid, [row, col]);
-        counter++;
+        //if a cell is a 1, call the helper function passing to it the grid, and the coords of the found 1
+        helper(grid, row, col);
+        counter++; //increase the counter once the entire island is cleared
       }
     }
   }
   return counter;
 };
 
+//Tests
 let grid1 = [
   [1, 1, 0, 0, 0],
   [1, 1, 0, 0, 0],
@@ -70,5 +66,21 @@ let grid2 = [
   [0, 0, 0, 0, 0],
 ];
 
+let grid3 = [
+  [1, 0, 1, 0, 1],
+  [0, 1, 0, 1, 0],
+  [1, 0, 1, 0, 1],
+  [0, 1, 0, 1, 0],
+];
+
+let grid4 = [
+  [1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1],
+];
+
 console.log(numOfIslands(grid1));
 console.log(numOfIslands(grid2));
+console.log(numOfIslands(grid3));
+console.log(numOfIslands(grid4));
