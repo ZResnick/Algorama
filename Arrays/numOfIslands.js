@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /*
 Given a binary matrix (2D array) of 1s (land) and 0s (water), implement a function numIslands to count the number of islands. An island is a block of land surrounded by water. It can be formed by connecting adjacent lands horizontally or vertically, but NOT diagonally. You may assume all four edges of the grid are all surrounded by water.
 
@@ -38,6 +39,16 @@ Approach:
 
 const helper = (grid, row, col) => {
   grid[row][col] = 0;
+  if (col >= 1) {
+    if (grid[row][col - 1] === 1) {
+      helper(grid, row, col - 1);
+    }
+  }
+  if (row >= 1) {
+    if (grid[row - 1][col] === 1) {
+      helper(grid, row - 1, col);
+    }
+  }
   if (col <= grid[0].length - 2) {
     if (grid[row][col + 1] === 1) {
       helper(grid, row, col + 1);
@@ -92,7 +103,13 @@ let grid4 = [
   [1, 1, 1, 1, 1],
 ];
 
+let grid5 = [[1, 1, 1], [0, 1, 0], [1, 1, 1]];
+
+let grid6 = [[1, 0, 1, 1, 1], [1, 0, 1, 0, 1], [1, 1, 1, 0, 1]];
+
 console.log(numOfIslands(grid1));
 console.log(numOfIslands(grid2));
 console.log(numOfIslands(grid3));
 console.log(numOfIslands(grid4));
+console.log(numOfIslands(grid5));
+console.log(numOfIslands(grid6));
