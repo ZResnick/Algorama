@@ -31,6 +31,8 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 - Valid Sudoku Solution (M)
 - Number of Islands (M)
 - Merge Sort (E)
+- Rotate a Matrix (M)
+- n Queens (H)
 
 ### Binary Trees
 
