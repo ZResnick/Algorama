@@ -13,6 +13,7 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 - Roman Numerals to Integers (E)
 - Longest Uncommon Substring (M)
 - Are these Strings Isomorphic? (M)
+- Number of Matching Subsequences (M)
 
 ### Linked Lists
 
@@ -22,7 +23,7 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
   - Tortoise and the Hare method
 - Remove Duplicates (EE)
 - Remove All Targeted Values from a Linked List (E)
-- Merge a Sorted Linked List (M)
+- Merge a Sorted Linked List (M
 
 ### Array Manipulation
 
@@ -32,7 +33,7 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 - Number of Islands (M)
 - Merge Sort (E)
 - Rotate a Matrix (M)
-- n Queens (H)
+- n Queens (H) _ Not yet coompleted _
 
 ### Binary Trees
 
