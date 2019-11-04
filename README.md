@@ -37,6 +37,7 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 - n Queens (H) _ Not yet coompleted _
 - Best Time to Buy and Sell Stocks (E)
 - Find the Duplicate Number (M)
+- Unique Paths (M)
 
 ### Binary Trees
 
