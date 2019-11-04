@@ -21,9 +21,10 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 - Reverse a Linked List (E)
 - Is there a loop in this Linked List? (E).
   - Tortoise and the Hare method
-- Remove Duplicates (EE)
+- Remove Duplicates (E)
 - Remove All Targeted Values from a Linked List (E)
-- Merge a Sorted Linked List (M
+- Merge a Sorted Linked List (M)
+- Remove nth Node (M)
 
 ### Array Manipulation
 
@@ -35,6 +36,7 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 - Rotate a Matrix (M)
 - n Queens (H) _ Not yet coompleted _
 - Best Time to Buy and Sell Stocks (E)
+- Find the Duplicate Number (M)
 
 ### Binary Trees
 
