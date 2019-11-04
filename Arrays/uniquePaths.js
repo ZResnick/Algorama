@@ -25,4 +25,4 @@ const uniquePaths = (rows, cols) => {
   return grid[rows - 1][cols - 1];
 };
 
-console.log(uniquePaths(10, 10));
+console.log(uniquePaths(7, 3));
