@@ -51,6 +51,6 @@ Note you can require a BST creator from ./treeCreator for testing purposes using
 - Merge Binary Trees (E)
 - Max Depth of a Binary Tree (M)
 
-### Array Manipulation
+### Recursion, Backtracking, Game Theory
 
-- Binary Search (E)
+- Generate Parentheses (H)
