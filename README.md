@@ -39,6 +39,9 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 - Find the Duplicate Number (M)
 - Unique Paths I (M)
 - Unique Paths II (M)
+- Min Path Sum (M)
+- Min Path of a Triangle (M)
+- River Sizes (M)
 
 ### Binary Trees
 
@@ -46,4 +49,8 @@ Note you can require a BST creator from ./treeCreator for testing purposes using
 
 - Simple Binary Search (E)
 - Merge Binary Trees (E)
-- Max Depth of a Binary Tree
+- Max Depth of a Binary Tree (M)
+
+### Array Manipulation
+
+- Binary Search (E)

@@ -74,4 +74,13 @@ const input = {
   },
 };
 
+const input2 = {
+  val: 1,
+  next: {
+    val: 2,
+    next: null,
+  },
+};
+
 console.log(removeNthFromEnd(input, 10));
+console.log(removeNthFromEnd(input2, 1));

@@ -42,6 +42,7 @@ const uniquePathsII = input => {
     }
   }
 
+  //run through the standard unique paths formula just skipping the ones set to zero;
   for (let row = 1; row < input.length; row++) {
     for (let col = 1; col < input[0].length; col++) {
       if (input[row][col] === null) {
@@ -53,4 +54,12 @@ const uniquePathsII = input => {
   return input[input.length - 1][input[0].length - 1];
 };
 
-console.log(uniquePathsII([[0, 0, 0], [0, 1, 0], [0, 0, 0]]));
+let input = [
+  [0, 0, 0, 0, 0, 0],
+  [1, 1, 1, 1, 1, 0],
+  [0, 0, 1, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0],
+  [1, 0, 0, 0, 0, 0],
+];
+
+console.log(uniquePathsII(input));
