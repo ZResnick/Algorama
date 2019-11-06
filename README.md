@@ -42,6 +42,7 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 - Min Path Sum (M)
 - Min Path of a Triangle (M)
 - River Sizes (M)
+- Levenshtein Distance (H)
 
 ### Binary Trees
 
