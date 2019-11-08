@@ -23,11 +23,11 @@ The length of both given strings is in range [1, 10,000].
 */
 
 function indexOf(needle, haystack) {
-  if (needle.length > haystack.length) return -1;
+  if (needle.length > haystack.length) return 0;
   for (let hIdx = 0; hIdx <= haystack.length - needle.length; hIdx++) {
     for (let nIdx = 0; nIdx < needle.length; nIdx++) {
       if (haystack[hIdx + nIdx] !== needle[nIdx]) break;
-      if (nIdx + 1 === needle.length) return hIdx;
+      if (nIdx + 1 === needle.length) return hIdx + 1;
     }
   }
   return 0;
@@ -62,15 +62,19 @@ const stringPermuations = (str1, str2) => {
   return !!counter;
 };
 
-console.log(stringPermuations('ab', 'eidbaooo'));
-console.log(stringPermuations('ab', 'eidbooo'));
+console.log('false?', stringPermuations('ab', 'a'));
+console.log('true?', stringPermuations('ab', 'eidbaooo'));
+console.log('false?', stringPermuations('ab', 'eidbooo'));
 console.log(
+  'true?',
   stringPermuations(
     'abcdef',
     'szfjbweiqashgvincwpqeiandgipvnwpodsngfvperwhsdghfeabcdvpweeropbjowrjsbe'
   )
 );
+console.log('false?', stringPermuations('prosperity', 'properties'));
 console.log(
+  'false?',
   stringPermuations(
     'abcdef',
     'szfjbweiqashgvincwpqeiandgipvnwpodsngfvperwhsdghfabcdvpweeropbjowrjsbe'
