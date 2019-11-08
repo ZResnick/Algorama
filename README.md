@@ -15,6 +15,7 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 - Are these Strings Isomorphic? (M)
 - Number of Matching Subsequences (M)
 - Needle in a Haystack (E)
+- All Permuations of a string (M)
 
 ### Linked Lists
 
