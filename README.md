@@ -14,6 +14,7 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 - Longest Uncommon Substring (M)
 - Are these Strings Isomorphic? (M)
 - Number of Matching Subsequences (M)
+- Needle in a Haystack (E)
 
 ### Linked Lists
 
@@ -25,6 +26,7 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 - Remove All Targeted Values from a Linked List (E)
 - Merge a Sorted Linked List (M)
 - Remove nth Node (M)
+- Do They Merge? (E)
 
 ### Array Manipulation
 

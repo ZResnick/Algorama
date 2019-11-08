@@ -61,7 +61,7 @@ const levenshteinDistance = (str1, str2) => {
       }
     }
   }
-
+  console.log(grid);
   return grid[str1.length][str2.length];
 };
 
