@@ -49,7 +49,7 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 
 ### Binary Trees
 
-Note you can require a BST creator from ./treeCreator for testing purposes using -----> const bst = require('./treeCreator')
+You can require a BST creator from ./treeCreator for testing purposes using -----> const bst = require('./treeCreator')
 
 - Simple Binary Search (E)
 - Merge Binary Trees (E)
@@ -58,3 +58,10 @@ Note you can require a BST creator from ./treeCreator for testing purposes using
 ### Recursion, Backtracking, Game Theory
 
 - Generate Parentheses (H)
+
+### Graphs
+
+You can require a Graph creator from ./simpleGraph for testing purposes using -----> const graph = require('./simpleGraph')
+
+- Simple Graph Implementation (E)
+- Does Path Exist Between Two Nodes in a Graph (E)
