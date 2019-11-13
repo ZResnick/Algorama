@@ -1,4 +1,4 @@
-# Algoram
+# Algorama
 
 ### The premiere outlet for algoing...
 
@@ -37,7 +37,6 @@ This repo is built for algorithm problems and practice, eith thre main goal bein
 - Number of Islands (M)
 - Merge Sort (E)
 - Rotate a Matrix (M)
-- n Queens (H) _ Not yet coompleted _
 - Best Time to Buy and Sell Stocks (E)
 - Find the Duplicate Number (M)
 - Unique Paths I (M)
@@ -58,6 +57,7 @@ You can require a BST creator from ./treeCreator for testing purposes using ----
 ### Recursion, Backtracking, Game Theory
 
 - Generate Parentheses (H)
+- N Queens (H) _ Not yet coompleted _
 
 ### Graphs
 
