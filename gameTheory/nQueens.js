@@ -18,42 +18,6 @@ Each solution contains a distinct board configuration of the n-queens' placement
 //   if (counter === grid.length + 1) return true;
 // };
 
-const isValid = (grid, row, col, n) => {
-  if (row > n || col > n) return false;
-  // check row
-  for (let i = 0; i < n; i++) {
-    if (i !== col && grid[row][i] === 'Q') return false;
-  }
-  // check col
-  for (let i = 0; i < n; i++) {
-    if (i !== row && grid[i][col] === 'Q') return false;
-  }
-  // check diagonal
-  for (let i = row, j = col; i >= 0 && j >= 0; i--, j--) {
-    if (grid[i][j] === 'Q') return false;
-  }
-  for (let i = row, j = col; i <= n - 1 && j <= n - 1; i++, j++) {
-    if (grid[i][j] === 'Q') return false;
-  }
-  for (let i = row, j = col; i <= n - 1 && j >= 0; i++, j--) {
-    if (grid[i][j] === 'Q') return false;
-  }
-  for (let i = row, j = col; i >= 0 && j <= n - 1; i--, j++) {
-    if (grid[i][j] === 'Q') return false;
-  }
-  return true;
-};
-
-const hasNQueens = grid => {
-  let count = 0;
-  for (let row = 0; row < grid.length; row++) {
-    for (let col = 0; col < grid.length; col++) {
-      if (grid[row][col] === 'Q') count++;
-    }
-  }
-  return count === grid.length;
-};
-
 const replicateGrid = grid => {
   const newGrid = [];
   for (let row = 0; row < grid.length; row++) {
@@ -66,33 +30,76 @@ const replicateGrid = grid => {
   return newGrid;
 };
 
-const helper = (grid, sols) => {
-  if (hasNQueens(grid)) {
-    sols.push(grid);
-    return;
+const optionMaker = n => {
+  let options = [];
+  for (let i = 0; i < n; i++) {
+    let row = Array(n).fill('.');
+    row[i] = 'Q';
+    options.push(row);
   }
-  for (let row = 0; row < grid.length; row++) {
-    for (let col = 0; col < grid.length; col++) {
-      if (isValid(grid, row, col, grid.length)) {
-        let newGrid = replicateGrid(grid);
-        newGrid[row][col] = 'Q';
-        helper(newGrid, sols);
+  return options;
+};
+
+const isValid = (grid, row, col) => {
+  let w = grid[0].length;
+  let h = grid.length;
+  // check row
+  for (let i = 0; i < w; i++) {
+    if (i !== col && grid[row][i] === 'Q') return false;
+  }
+  // check col
+  for (let i = 0; i < h; i++) {
+    if (i !== row && grid[i][col] === 'Q') return false;
+  }
+  // check diagonal
+  for (let i = row, j = col; i >= 0 && j >= 0; i--, j--) {
+    if (i !== row && j !== col && grid[i][j] === 'Q') return false;
+  }
+  for (let i = row, j = col; i <= h - 1 && j <= w - 1; i++, j++) {
+    if (i !== row && j !== col && grid[i][j] === 'Q') return false;
+  }
+  for (let i = row, j = col; i <= h - 1 && j >= 0; i++, j--) {
+    if (i !== row && j !== col && grid[i][j] === 'Q') return false;
+  }
+  for (let i = row, j = col; i >= 0 && j <= w - 1; i--, j++) {
+    if (i !== row && j !== col && grid[i][j] === 'Q') return false;
+  }
+  return true;
+};
+
+const checkBoard = grid => {
+  for (let i = 0; i < grid.length; i++) {
+    for (let j = 0; j < grid[0].length; j++) {
+      if (grid[i][j] === 'Q') {
+        if (!isValid(grid, i, j)) return false;
       }
+    }
+  }
+  return true;
+};
+
+const helper = (grid, sols, options) => {
+  if (grid.length === options.length) {
+    sols.push(replicateGrid(grid));
+  } else {
+    for (let i = 0; i < options.length; i++) {
+      grid.push(options[i]);
+      if (checkBoard(grid)) {
+        helper(grid, sols, options);
+      }
+      grid.pop();
     }
   }
 };
 
 const nQueens = n => {
   let sols = [];
+  let options = optionMaker(n);
   for (let i = 0; i < n; i++) {
-    const board = Array(n);
-    for (let row = 0; row < board.length; row++) {
-      board[row] = Array(n).fill(1);
-    }
-    board[0][i] = 'Q';
-    helper(board, sols);
+    const board = [options[i]];
+    helper(board, sols, options);
   }
   return sols;
 };
 
-console.log(nQueens(5));
+console.log(nQueens(8).length);
