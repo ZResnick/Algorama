@@ -58,6 +58,7 @@ You can require a BST creator from ./treeCreator for testing purposes using ----
 
 - Generate Parentheses (H)
 - N Queens (H) _ Not yet coompleted _
+- Does Word Exist in Matrix (M)
 
 ### Graphs
 
