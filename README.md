@@ -45,6 +45,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Min Path of a Triangle (M)
 - River Sizes (M)
 - Levenshtein Distance (H)
+- Generate Pacsals Traingle (E)
 
 ### Binary Trees
 
