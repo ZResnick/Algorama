@@ -39,12 +39,6 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Rotate a Matrix (M)
 - Best Time to Buy and Sell Stocks (E)
 - Find the Duplicate Number (M)
-- Unique Paths I (M)
-- Unique Paths II (M)
-- Min Path Sum (M)
-- Min Path of a Triangle (M)
-- River Sizes (M)
-- Levenshtein Distance (H)
 - Generate Pacsals Traingle (E)
 
 ### Binary Trees
@@ -69,3 +63,14 @@ You can require a bi-directional Graph creator from ./simpleGraph for testing pu
 
 - Simple Graph Implementation (E)
 - Does Path Exist Between Two Nodes in a Graph (E)
+
+### Dynamic Programming
+
+- Coin Change (M)
+- Unique Paths I (M)
+- Unique Paths II (M)
+- Min Path Sum (M)
+- Min Path of a Triangle (M)
+- River Sizes (M)
+- Levenshtein Distance (H)
+- Number of Islands (M)

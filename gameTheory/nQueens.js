@@ -102,4 +102,6 @@ const nQueens = n => {
   return sols;
 };
 
-console.log(nQueens(5));
+console.log(nQueens(5).length);
+console.log(nQueens(4).length);
+console.log(nQueens(10).length);
