@@ -75,3 +75,4 @@ You can require a bi-directional Graph creator from ./simpleGraph for testing pu
 - River Sizes (M)
 - Levenshtein Distance (H)
 - Number of Islands (M)
+- Longest Increasing Subsequence (M)
