@@ -16,6 +16,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Number of Matching Subsequences (M)
 - Needle in a Haystack (E)
 - All Permuations of a string (M)
+- Validate Parentheses (E)
 
 ### Linked Lists
 
