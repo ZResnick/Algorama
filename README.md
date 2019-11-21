@@ -41,6 +41,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Best Time to Buy and Sell Stocks (E)
 - Find the Duplicate Number (M)
 - Generate Pacsals Traingle (E)
+- Product of Array Except Self (M)
 
 ### Binary Trees
 
