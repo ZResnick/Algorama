@@ -78,3 +78,4 @@ You can require a bi-directional Graph creator from ./simpleGraph for testing pu
 - Levenshtein Distance (H)
 - Number of Islands (M)
 - Longest Increasing Subsequence (M)
+- Subset Sum (M)
