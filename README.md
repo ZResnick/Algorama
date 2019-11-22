@@ -79,3 +79,4 @@ You can require a bi-directional Graph creator from ./simpleGraph for testing pu
 - Number of Islands (M)
 - Longest Increasing Subsequence (M)
 - Subset Sum (M)
+- Word Break (M)
