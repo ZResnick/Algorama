@@ -17,6 +17,7 @@ Example 1: graph = {
 }, start = 'a', end = 'd' should return true
 
 */
+const graph = require('./directedGraph.js');
 
 const doesPathExist = (graph, start, end, memo = {}) => {
   let connections = graph[start];
@@ -31,26 +32,48 @@ const doesPathExist = (graph, start, end, memo = {}) => {
   return false;
 };
 
-let input1 = {
-  a: ['b', 'c', 'q'],
-  b: [],
-  c: ['d', 'b', 'a', 'e'],
-  d: ['d'],
-  e: ['c'],
-  q: [],
-};
+let input1 = new graph();
+input1
+  .addVertex('a')
+  .addVertex('b')
+  .addVertex('c')
+  .addVertex('d')
+  .addVertex('e')
+  .addVertex('q')
+  .addEdge('a', 'b')
+  .addEdge('a', 'c')
+  .addEdge('a', 'q')
+  .addEdge('c', 'b')
+  .addEdge('c', 'd')
+  .addEdge('c', 'a')
+  .addEdge('c', 'e')
+  .addEdge('d', 'd')
+  .addEdge('e', 'c');
 
-let input2 = {
-  a: ['c'],
-  b: ['a', 'q', 'd'],
-  c: ['b'],
-  d: ['d', 'f'],
-  e: ['g'],
-  f: ['d', 'e'],
-  g: ['c'],
-  q: ['b'],
-  l: ['e'],
-};
+let input2 = new graph();
+input2
+  .addVertex('a')
+  .addVertex('b')
+  .addVertex('c')
+  .addVertex('d')
+  .addVertex('e')
+  .addVertex('f')
+  .addVertex('g')
+  .addVertex('q')
+  .addVertex('l')
+  .addEdge('a', 'c')
+  .addEdge('b', 'a')
+  .addEdge('b', 'q')
+  .addEdge('b', 'd')
+  .addEdge('c', 'b')
+  .addEdge('d', 'd')
+  .addEdge('d', 'f')
+  .addEdge('e', 'g')
+  .addEdge('f', 'd')
+  .addEdge('f', 'e')
+  .addEdge('g', 'c')
+  .addEdge('q', 'b')
+  .addEdge('l', 'e');
 
-console.log(doesPathExist(input1, 'a', 'd'));
-console.log(doesPathExist(input2, 'a', 'l'));
+console.log(doesPathExist(input1.adjacencyList, 'a', 'd'));
+console.log(doesPathExist(input2.adjacencyList, 'a', 'l'));

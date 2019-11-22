@@ -62,7 +62,9 @@ You can require a BST creator from ./treeCreator for testing purposes using ----
 
 ### Graphs
 
-You can require a bi-directional Graph creator from ./simpleGraph for testing purposes using -----> const graph = require('./simpleGraph')
+You can require a non-directional Graph creator from ./simpleGraph for testing purposes using -----> const graph = require('./nonDirectedGraph.js')
+
+You can require a Directional Graph creator from ./simpleGraph for testing purposes using -----> const graph = require('./directedGraph.js')
 
 - Simple Graph Implementation (E)
 - Does Path Exist Between Two Nodes in a Graph (E)

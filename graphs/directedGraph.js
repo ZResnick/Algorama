@@ -1,12 +1,3 @@
-/*
-
-Make a simple implementation of a graph with the following methods:
-1.  add a vertex
-2.  add an edge between two vertices
-3.  remove an edge between to vertices
-
-*/
-
 module.exports = class Graph {
   constructor() {
     this.adjacencyList = {};
@@ -17,17 +8,15 @@ module.exports = class Graph {
     return this;
   }
 
-  addEdge(vertex1, vertex2) {
-    this.addVertex(vertex1);
-    this.addVertex(vertex2);
-    this.adjacencyList[vertex1].push(vertex2);
-    this.adjacencyList[vertex2].push(vertex1);
+  addEdge(from, to) {
+    this.addVertex(from);
+    this.addVertex(to);
+    this.adjacencyList[from].push(to);
     return this;
   }
 
-  removeEdge(v1, v2) {
-    this.adjacencyList[v1] = this.adjacencyList[v1].filter(v => v !== v2);
-    this.adjacencyList[v2] = this.adjacencyList[v2].filter(v => v !== v1);
+  removeEdge(from, to) {
+    this.adjacencyList[from] = this.adjacencyList[from].filter(v => v !== to);
     return this;
   }
 
