@@ -23,18 +23,15 @@ Output: false
 */
 
 const wordBreak = (str, wordDict) => {
-  let dict = {};
-  wordDict.forEach(el => {
-    dict[el] = true;
-  });
+  let dict = new Set(wordDict);
   let dp = Array(str.length + 1).fill(false);
   dp[0] = true;
   for (let i = 0; i < str.length; i++) {
-    if (dict[str[i]]) dp[i + 1] = true;
+    if (dict.has(str[i])) dp[i + 1] = true;
     else {
       for (let j = i; j >= 0; j--) {
         if (dp[j]) {
-          if (dict[str.slice(j, i + 1)]) dp[i + 1] = true;
+          if (dict.has(str.slice(j, i + 1))) dp[i + 1] = true;
         }
       }
     }
