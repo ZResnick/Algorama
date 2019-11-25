@@ -54,6 +54,7 @@ You can require a BST creator from ./treeCreator for testing purposes using ----
 - Max Depth of a Binary Tree (M)
 - Reverse Breadth First Levels (E)
 - Minimum Difference (E)
+- Range Sum (E)
 
 ### Recursion, Backtracking, Game Theory
 
