@@ -87,3 +87,9 @@ You can require a Directional Graph creator from ./simpleGraph for testing purpo
 - Longest Increasing Subsequence (M)
 - Subset Sum (M)
 - Word Break (M)
+
+### Heaps
+
+You can require a Binary Heap creator from ./heapContsructor for testing purposes using -----> const heap = require('./heapConstructor.js')
+
+-
