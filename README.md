@@ -17,6 +17,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Needle in a Haystack (E)
 - All Permuations of a string (M)
 - Validate Parentheses (E)
+- Baloon Finder (E)
 
 ### Linked Lists
 
