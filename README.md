@@ -53,6 +53,7 @@ You can require a BST creator from ./treeCreator for testing purposes using ----
 - Merge Binary Trees (E)
 - Max Depth of a Binary Tree (M)
 - Reverse Breadth First Levels (E)
+- Minimum Difference (E)
 
 ### Recursion, Backtracking, Game Theory
 
