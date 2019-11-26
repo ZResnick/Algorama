@@ -93,3 +93,7 @@ You can require a Directional Graph creator from ./simpleGraph for testing purpo
 You can require a Binary Heap creator from ./heapContsructor for testing purposes using -----> const heap = require('./heapConstructor.js')
 
 -
+
+### Misceleaneous
+
+- Count the ones in the Binary Representation of a Given Integer, the Hamming Weight (M)
