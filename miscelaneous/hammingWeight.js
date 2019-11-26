@@ -21,9 +21,7 @@ const onesInBinary = n => {
   let count = 0;
   while (n >= 1) {
     let exp = 1;
-    while (Math.pow(2, exp) <= n) {
-      exp++;
-    }
+    while (Math.pow(2, exp) <= n) exp++;
     count++;
     n -= Math.pow(2, exp - 1);
   }

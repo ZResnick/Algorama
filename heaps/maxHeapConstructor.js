@@ -28,7 +28,7 @@ module.exports = class BinarySearchTree {
     let i = 0;
     while (heap[i] < Math.max(heap[2 * i + 2], heap[2 * i + 1])) {
       let bigChildIdx =
-        heap[2 * i + 2] > heap[2 * i + 1] ? 2 * i + 2 : 2 * i + 1;
+        heap[2 * i + 2] >= heap[2 * i + 1] ? 2 * i + 2 : 2 * i + 1;
       let temp = heap[bigChildIdx];
       heap[bigChildIdx] = heap[i];
       heap[i] = temp;
