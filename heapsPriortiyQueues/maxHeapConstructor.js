@@ -3,7 +3,7 @@ A parent node at index = k has children at 2k + 1 and 2k + 2. A child node at
 index = i has a parent at Math.floor(i - 1)/2
 */
 
-module.exports = class BinarySearchTree {
+module.exports = class maxPriortyQueue {
   constructor() {
     this.values = [];
   }
@@ -16,7 +16,7 @@ module.exports = class BinarySearchTree {
       let temp = heap[Math.floor((curIdx - 1) / 2)];
       heap[Math.floor((curIdx - 1) / 2)] = heap[curIdx];
       heap[curIdx] = temp;
-      curIdx = [Math.floor((curIdx - 1) / 2)];
+      curIdx = Math.floor((curIdx - 1) / 2);
     }
     return this;
   }

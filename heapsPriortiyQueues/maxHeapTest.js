@@ -11,6 +11,7 @@ heap
   .insert(6)
   .insert(7);
 
+console.log(heap);
 console.log(heap.extractMax(), heap.values);
 console.log(heap.extractMax(), heap.values);
 console.log(heap.extractMax(), heap.values);
