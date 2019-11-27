@@ -22,12 +22,11 @@ Output : 6
 */
 
 const onesInBinary = (n, k) => {
-  let count = 0;
-  while (n >= k - 1) {
-    let exp = 1;
-    while (Math.pow(k, exp) <= n) exp++;
-    count++;
-    n -= Math.pow(k, exp - 1);
+  if (n === 0) return 0;
+  let count = 1;
+  while (n > k) {
+    if (n % k) count++;
+    n = Math.floor(n / k);
   }
   return count;
 };
@@ -35,6 +34,7 @@ const onesInBinary = (n, k) => {
 console.log('2 ---->', onesInBinary(5, 2));
 console.log('3 ---->', onesInBinary(7, 2));
 console.log('1 ---->', onesInBinary(128, 2));
-console.log('2 ---->', onesInBinary(129, 2));
-console.log('0 ---->', onesInBinary(345767, 10));
-console.log('6 ---->', onesInBinary(345767, 5));
+console.log('4 ---->', onesInBinary(129, 3));
+console.log('6 ---->', onesInBinary(345767, 10));
+console.log('7 ---->', onesInBinary(56098, 5));
+console.log('9 ---->', onesInBinary(43869346934, 7));

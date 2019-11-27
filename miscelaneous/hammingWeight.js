@@ -18,17 +18,16 @@ Output : 10
 */
 
 const onesInBinary = n => {
-  let count = 0;
-  while (n >= 1) {
-    let exp = 1;
-    while (Math.pow(2, exp) <= n) exp++;
-    count++;
-    n -= Math.pow(2, exp - 1);
+  if (n === 0) return 0;
+  let count = 1;
+  while (n > 2) {
+    if (n % 2) count++;
+    n = Math.floor(n / 2);
   }
   return count;
 };
 
-console.log(onesInBinary(5));
-console.log(onesInBinary(7));
-console.log(onesInBinary(345767));
-console.log(onesInBinary(128));
+console.log('2 ------> ', onesInBinary(5));
+console.log('3 ------> ', onesInBinary(7));
+console.log('10 -----> ', onesInBinary(345767));
+console.log('1 ------> ', onesInBinary(128));
