@@ -1,4 +1,4 @@
-const List = require('/Users/zacharyresnick/Desktop/Algorama/heapsPriortiyQueues/maxPriortyQueueConstructor.js');
+const List = require('./minPriorityQueueConstructor.js');
 
 const list = new List();
 
