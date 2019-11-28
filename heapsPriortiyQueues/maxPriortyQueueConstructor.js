@@ -1,10 +1,19 @@
+class Node {
+  constructor(val, priority) {
+    this.val = val;
+    this.priority = priority;
+  }
+}
+
 module.exports = class maxPriorityQueue {
   constructor() {
     this.values = [];
   }
 
-  insert(item) {
+  insert(val, priority) {
     let list = this.values;
+
+    let item = new Node(val, priority);
     list.push(item);
     if (list.length > 1) {
       let curIdx = this.values.length - 1;
@@ -22,9 +31,9 @@ module.exports = class maxPriorityQueue {
     return this;
   }
 
-  extractMax() {
+  extractTop() {
     let list = this.values;
-    let item = list.shift();
+    let topPriority = list.shift();
     list.unshift(list.pop());
     let i = 0;
     while (
@@ -44,6 +53,6 @@ module.exports = class maxPriorityQueue {
       list[i] = temp;
       i = bigChildIdx;
     }
-    return item;
+    return topPriority;
   }
 };
