@@ -5,7 +5,7 @@ class Node {
   }
 }
 
-module.exports = class maxPriorityQueue {
+module.exports = class minPriorityQueue {
   constructor() {
     this.values = [];
   }

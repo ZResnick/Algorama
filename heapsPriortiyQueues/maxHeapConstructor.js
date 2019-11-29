@@ -3,7 +3,7 @@ A parent node at index = k has children at 2k + 1 and 2k + 2. A child node at
 index = i has a parent at Math.floor(i - 1)/2
 */
 
-module.exports = class maxPriortyQueue {
+module.exports = class maxBinaryHeap {
   constructor() {
     this.values = [];
   }

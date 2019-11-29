@@ -90,9 +90,17 @@ You can require a Directional Graph creator from ./simpleGraph for testing purpo
 
 ### Heaps
 
-You can require a Binary Heap creator from ./heapContsructor for testing purposes using -----> const heap = require('./heapConstructor.js')
+You can require a:
 
--
+1. Max Binary Heap Constructor from /maxHeapConstructor.js for testing purposes using -----> const Heap = require('./heapConstructor.js') and let newHeap = new Heap()
+
+2. Max Priority Queue Constructor from /maxPriorityQueueConstructor.js for testing purposes using -----> const MaxQueue = require('./maxPriorityQueueConstructor.js') and let newMaxQueue = new MaxQueue()
+
+3. Min Priority Queue Constructor from /minPriorityQueueConstructor.js for testing purposes using -----> const MinQueue = require('./minPriorityQueueConstructor.js') and let newMinQueue = new MinQueue()
+
+- Min Prioirty Queue Test
+- Max Prioirty Queue Test
+- Max Heap Test
 
 ### Misceleaneous
 
