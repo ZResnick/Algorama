@@ -29,7 +29,6 @@ const dijkstrasShortestPathAlgorithm = (list, start, end) => {
   //extract the top and begin the while loop, searching for the end to be popped off
   let top = distances.extractTop();
   while (top.val !== end) {
-    console.log(top);
     //mark the top as now having been visited
     visited[top.val] = true;
 
@@ -81,4 +80,26 @@ graph1
   .addEdge('f', 'd', 1)
   .addEdge('e', 'f', 1);
 
+const graph2 = new graph();
+graph2
+  .addVertex('a')
+  .addVertex('b')
+  .addVertex('c')
+  .addVertex('d')
+  .addVertex('e')
+  .addVertex('f')
+  .addVertex('g')
+  .addVertex('h')
+  .addEdge('a', 'b', 5)
+  .addEdge('a', 'c', 1)
+  .addEdge('b', 'c', 6)
+  .addEdge('c', 'd', 1)
+  .addEdge('c', 'g', 7)
+  .addEdge('d', 'e', 1)
+  .addEdge('e', 'f', 1)
+  .addEdge('h', 'f', 1)
+  .addEdge('h', 'g', 1)
+  .addEdge('e', 'g', 3);
+
 console.log(dijkstrasShortestPathAlgorithm(graph1.adjacencyList, 'a', 'e'));
+console.log(dijkstrasShortestPathAlgorithm(graph2.adjacencyList, 'a', 'h'));
