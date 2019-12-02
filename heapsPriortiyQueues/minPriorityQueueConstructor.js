@@ -1,3 +1,5 @@
+/* eslint-disable complexity */
+
 class Node {
   constructor(val, priority) {
     this.val = val;
@@ -5,54 +7,66 @@ class Node {
   }
 }
 
-module.exports = class minPriorityQueue {
+module.exports = class MinPriorityQueue {
   constructor() {
     this.values = [];
   }
-
   insert(val, priority) {
-    let list = this.values;
-
-    let item = new Node(val, priority);
-    list.push(item);
-    if (list.length > 1) {
-      let curIdx = this.values.length - 1;
-      while (
-        list[Math.floor((curIdx - 1) / 2)].priority > list[curIdx].priority
-      ) {
-        let temp = list[Math.floor((curIdx - 1) / 2)];
-        list[Math.floor((curIdx - 1) / 2)] = list[curIdx];
-        list[curIdx] = temp;
-        curIdx = Math.floor((curIdx - 1) / 2)
-          ? Math.floor((curIdx - 1) / 2)
-          : 1;
-      }
-    }
-    return this;
+    let newNode = new Node(val, priority);
+    this.values.push(newNode);
+    this.bubbleUp();
   }
-
-  extractTop() {
-    let list = this.values;
-    let topPriority = list.shift();
-    list.unshift(list.pop());
-    let i = 0;
-    while (
-      list[i] &&
-      list[i].priority >
-        Math.min(
-          list[2 * i + 2] && list[2 * i + 2].priority,
-          list[2 * i + 1] && list[2 * i + 1].priority
-        )
-    ) {
-      let bigChildIdx =
-        list[2 * i + 2].priority <= list[2 * i + 1].priority
-          ? 2 * i + 2
-          : 2 * i + 1;
-      let temp = list[bigChildIdx];
-      list[bigChildIdx] = list[i];
-      list[i] = temp;
-      i = bigChildIdx;
+  bubbleUp() {
+    let idx = this.values.length - 1;
+    const element = this.values[idx];
+    while (idx > 0) {
+      let parentIdx = Math.floor((idx - 1) / 2);
+      let parent = this.values[parentIdx];
+      if (element.priority >= parent.priority) break;
+      this.values[parentIdx] = element;
+      this.values[idx] = parent;
+      idx = parentIdx;
     }
-    return topPriority;
+  }
+  extractTop() {
+    //taking off the "top" of the queue
+    const top = this.values[0];
+    const end = this.values.pop();
+    if (this.values.length > 0) {
+      this.values[0] = end;
+      this.sinkDown();
+    }
+    return top;
+  }
+  sinkDown() {
+    let idx = 0;
+    const length = this.values.length;
+    const element = this.values[0];
+    while (true) {
+      let leftChildIdx = 2 * idx + 1;
+      let rightChildIdx = 2 * idx + 2;
+      let leftChild, rightChild;
+      let swap = null;
+
+      if (leftChildIdx < length) {
+        leftChild = this.values[leftChildIdx];
+        if (leftChild.priority < element.priority) {
+          swap = leftChildIdx;
+        }
+      }
+      if (rightChildIdx < length) {
+        rightChild = this.values[rightChildIdx];
+        if (
+          (swap === null && rightChild.priority < element.priority) ||
+          (swap !== null && rightChild.priority < leftChild.priority)
+        ) {
+          swap = rightChildIdx;
+        }
+      }
+      if (swap === null) break;
+      this.values[idx] = this.values[swap];
+      this.values[swap] = element;
+      idx = swap;
+    }
   }
 };
