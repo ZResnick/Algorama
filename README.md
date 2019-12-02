@@ -75,6 +75,7 @@ You can require a Weighted Non-Directed Graph Constructor for testing purposes u
 
 - Simple Graph Implementation (E)
 - Does Path Exist Between Two Nodes in a Graph (E)
+- Dijkstras Shortes Path Algorithm (M)
 
 ### Dynamic Programming
 
