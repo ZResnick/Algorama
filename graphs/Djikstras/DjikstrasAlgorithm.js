@@ -40,7 +40,8 @@ const dijkstrasShortestPathAlgorithm = (list, start, end) => {
         //check to see if its in the priorty queue, if it is, check to see if the tops priortiy plus the weight of the neighbor is less than the current priorty and change the previous.
         if (distances[neighbor.node]) {
           if (distances[neighbor.node] > top.priority + neighbor.weight) {
-            distances[neighbor.node] = top.priority + neighbor.weight;
+            delete distances[neighbor.node];
+            distances.insert(neighbor.node, top.priority + neighbor.weight);
             previous[neighbor.node] = top.val;
           }
         }
