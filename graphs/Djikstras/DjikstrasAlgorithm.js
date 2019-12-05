@@ -236,3 +236,4 @@ console.log(
 console.log(dijkstrasShortestPathAlgorithm(graph1.adjacencyList, 'a', 'e'));
 console.log(dijkstrasShortestPathAlgorithm(graph2.adjacencyList, 'a', 'h'));
 console.log(dijkstrasShortestPathAlgorithm(test4.adjacencyList, 'C', 'E'));
+console.log(dijkstrasShortestPathAlgorithm(test4.adjacencyList, 'A', 'E'));
