@@ -38,8 +38,8 @@ module.exports = class MinPriorityQueue {
     }
     return top;
   }
-  sinkDown() {
-    let idx = 0;
+  sinkDown(idx = 0) {
+    // let idx = 0;
     const length = this.values.length;
     const element = this.values[0];
     while (true) {

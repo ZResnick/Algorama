@@ -108,3 +108,5 @@ You can require a:
 ### Misceleaneous
 
 - Count the ones in the Binary Representation of a Given Integer, the Hamming Weight (M)
+- Count the non-zero numbers in the n-Ary Representation of a Given Integer, the N-Hamming Weight (M)
+- Currying Function (M)
