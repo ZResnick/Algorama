@@ -90,6 +90,7 @@ You can require a Weighted Non-Directed Graph Constructor for testing purposes u
 - Longest Increasing Subsequence (M)
 - Subset Sum (M)
 - Word Break (M)
+- Jump Game (M)
 
 ### Heaps
 
