@@ -103,5 +103,5 @@ const nQueens = n => {
 };
 
 console.log(nQueens(5).length);
-console.log(nQueens(4).length);
-console.log(nQueens(10).length);
+console.log(nQueens(4));
+console.log(nQueens(10));

@@ -91,6 +91,7 @@ You can require a Weighted Non-Directed Graph Constructor for testing purposes u
 - Subset Sum (M)
 - Word Break (M)
 - Jump Game (M)
+- Handshake Problem (E)
 
 ### Heaps
 
