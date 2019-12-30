@@ -1,3 +1,8 @@
+/*
+given a list of unique characters, return an array of all possible permutations
+of that list of characters
+*/
+
 const permutations = nums => {
   let sols = [[nums[0]]];
   let curSols = [];

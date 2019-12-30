@@ -15,10 +15,11 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Are these Strings Isomorphic? (M)
 - Number of Matching Subsequences (M)
 - Needle in a Haystack (E)
-- All Permuations of a string (M)
+- All Permutations of a string (M)
 - Validate Parentheses (E)
-- Baloon Finder (E)
+- Balloon Finder (E)
 - Uncommon Words (E)
+- License Creator (E)
 
 ### Linked Lists
 
@@ -42,7 +43,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Rotate a Matrix (M)
 - Best Time to Buy and Sell Stocks (E)
 - Find the Duplicate Number (M)
-- Generate Pacsals Traingle (E)
+- Generate Pacsals Triangle (E)
 - Product of Array Except Self (M)
 
 ### Binary Trees
@@ -55,7 +56,7 @@ You can require a BST creator from ./treeCreator for testing purposes using ----
 - Reverse Breadth First Levels (E)
 - Minimum Difference (E)
 - Range Sum (E)
-- Preorder Traversal of nAry tree (E)
+- Pre-order Traversal of nAry tree (E)
 
 ### Recursion, Backtracking, Game Theory
 
@@ -75,7 +76,7 @@ You can require a Weighted Non-Directed Graph Constructor for testing purposes u
 
 - Simple Graph Implementation (E)
 - Does Path Exist Between Two Nodes in a Graph (E)
-- Dijkstras Shortes Path Algorithm (M)
+- Djikstras Shortest Path Algorithm (M)
 
 ### Dynamic Programming
 
@@ -103,11 +104,11 @@ You can require a:
 
 3. Min Priority Queue Constructor from /minPriorityQueueConstructor.js for testing purposes using -----> const MinQueue = require('./minPriorityQueueConstructor.js') and let newMinQueue = new MinQueue()
 
-- Min Prioirty Queue Test
-- Max Prioirty Queue Test
+- Min Priority Queue Test
+- Max Priority Queue Test
 - Max Heap Test
 
-### Misceleaneous
+### Miscellaneous
 
 - Count the ones in the Binary Representation of a Given Integer, the Hamming Weight (M)
 - Count the non-zero numbers in the n-Ary Representation of a Given Integer, the N-Hamming Weight (M)
