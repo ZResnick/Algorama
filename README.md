@@ -46,6 +46,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Find the Duplicate Number (M)
 - Generate Pacsals Triangle (E)
 - Product of Array Except Self (M)
+- Minimum Domino Flip (M)
 
 ### Binary Trees
 
