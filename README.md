@@ -20,6 +20,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Balloon Finder (E)
 - Uncommon Words (E)
 - License Creator (E)
+- Compare Strings by Frequency of the Smallest Character (E)
 
 ### Linked Lists
 
