@@ -67,6 +67,7 @@ You can require a BST creator from ./treeCreator for testing purposes using ----
 - N Queens Naive (H) _Works but is not ideal_
 - Does Word Exist in Matrix (M)
 - Which Words Exist in Matrix (M)
+- Path With Maximum Gold (M)
 
 ### Graphs
 
