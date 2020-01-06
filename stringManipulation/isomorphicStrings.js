@@ -42,7 +42,7 @@ const areIsomorphic = (s, t) => {
         break;
       }
     }
-    if (isFalse) return false; //if theres never a match, isFalse will remain true and retuern false
+    if (isFalse) return false; //if theres never a match, isFalse will remain true and return false
   }
   return true;
 };
