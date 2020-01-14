@@ -20,34 +20,37 @@ const MinQueue = require('../../heapsPriortiyQueues/minPriorityQueueConstructor.
 
 const dijkstrasShortestPathAlgorithm = (list, start, end) => {
   if (start === end) return start;
+
+  //instantiate the previous list with the start node having a value of null
+  //this list will aggregate every node touched and the node it is closest to.
+  //If another Node is closer, that noide will replace the value
   let previous = { start: null };
+
+  //we keep track of the nodes we've visited because once we've seen it,
+  //we know we cant get a shorter path to it.
   let visited = { start: true };
 
+  //create a minimum priority queue with distances
+  //Instantiate that queue with the start node
   let distances = new MinQueue();
   distances.insert(start, 0);
 
   //extract the top and begin the while loop, searching for the end to be popped off
+  //as on line 29, once we hit the top, we've found the shortest distance to it
   let top = distances.extractTop();
   while (top.val !== end) {
-    //mark the top as now having been visited
+    //mark the top as now having been visited so we never traverse back to it
     visited[top.val] = true;
 
-    //look at the tops neighbors and go through each
+    //look at the tops neighbors in its adjacency matrix and go through each
     let neighbors = list[top.val];
     neighbors.forEach(neighbor => {
-      //make sure it hasnt been visited
+      //make sure it hasn't been visited
       if (!visited[neighbor.node]) {
         //check to see if its in the priorty queue, if it is, check to see if the tops priortiy plus the weight of the neighbor is less than the current priorty and change the previous.
-        // console.log('neighbor', neighbor);
-        // console.log(distances);
         let i = distances.values.findIndex(el => el.val === neighbor.node);
         if (i >= 0) {
-          // console.log(
-          //   distances.values[i].priority,
-          //   top.priority + neighbor.weight
-          // );
           if (distances.values[i].priority > top.priority + neighbor.weight) {
-            //fix this right here
             //find the index of the one youre looking for.   i
             //switch that with the last of the array
             //pop the end off

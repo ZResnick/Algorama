@@ -11,6 +11,11 @@ Follow up:
 Could you solve it with constant space complexity? (The output array does not count as extra space for the purpose of space complexity analysis.)
 */
 
+const productNaive = arr => {
+  let total = arr.reduce((acc, el) => acc * el, 1);
+  return arr.map(el => total / el);
+};
+
 const product = arr => {
   let left = Array(arr.length).fill(1);
   let right = Array(arr.length).fill(1);
@@ -22,3 +27,6 @@ const product = arr => {
 };
 
 console.log(product([1, 2, 3, 4]));
+console.log(productNaive([1, 2, 3, 4]));
+console.log(product([2, 3, 4, 5, 6, 7]));
+console.log(productNaive([2, 3, 4, 5, 6, 7]));

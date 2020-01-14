@@ -21,6 +21,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Uncommon Words (E)
 - License Creator (E)
 - Compare Strings by Frequency of the Smallest Character (E)
+- Turn a number into a properly comma delimitated string (E)
 
 ### Linked Lists
 
@@ -45,7 +46,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Best Time to Buy and Sell Stocks (E)
 - Find the Duplicate Number (M)
 - Generate Pacsals Triangle (E)
-- Product of Array Except Self (M)
+- Product of Array Except Self (naive and optimized) (M)
 - Minimum Domino Flip (M)
 
 ### Binary Trees
@@ -96,6 +97,7 @@ You can require a Weighted Non-Directed Graph Constructor for testing purposes u
 - Word Break (M)
 - Jump Game (M)
 - Handshake Problem (E)
+- Fibonacci Sequence (E)
 
 ### Heaps
 
