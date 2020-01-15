@@ -22,6 +22,8 @@ This repo is built for algorithm problems and practice, with the main goal being
 - License Creator (E)
 - Compare Strings by Frequency of the Smallest Character (E)
 - Turn a number into a properly comma delimitated string (E)
+- Return the most used character in a string (E)
+- Interweave strings (E)
 
 ### Linked Lists
 
@@ -48,6 +50,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Generate Pacsals Triangle (E)
 - Product of Array Except Self (naive and optimized) (M)
 - Minimum Domino Flip (M)
+- Pair Sum (E)
 
 ### Binary Trees
 
