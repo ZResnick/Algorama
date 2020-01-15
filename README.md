@@ -52,6 +52,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Minimum Domino Flip (M)
 - Pair Sum (E)
 - Move all zeros to the end of the array (E)
+- Dumb Pacman (M)
 
 ### Binary Trees
 
