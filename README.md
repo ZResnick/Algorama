@@ -47,10 +47,11 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Rotate a Matrix (M)
 - Best Time to Buy and Sell Stocks (E)
 - Find the Duplicate Number (M)
-- Generate Pacsals Triangle (E)
+- Generate Pacsal's Triangle (E)
 - Product of Array Except Self (naive and optimized) (M)
 - Minimum Domino Flip (M)
 - Pair Sum (E)
+- Move all zeros to the end of the array (E)
 
 ### Binary Trees
 
