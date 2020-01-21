@@ -41,3 +41,11 @@ console.log(mergeSort(test3));
 console.log(mergeSort(test4));
 console.log(mergeSort(test5));
 console.log(mergeSort(test6));
+
+console.table(
+  [
+    { id: 0, name: 'zach', gender: 'male', age: 26 },
+    { id: 1, name: 'nicole', gender: 'female', age: 28 },
+  ],
+  ['name', 'age']
+);

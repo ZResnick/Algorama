@@ -53,6 +53,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Pair Sum (E)
 - Move all zeros to the end of the array (E)
 - Dumb Pacman (M)
+- Merge Sort Test (N/A) console.table()
 
 ### Binary Trees
 
