@@ -24,6 +24,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Turn a number into a properly comma delimitated string (E)
 - Return the most used character in a string (E)
 - Interweave strings (E)
+- Tic Tac Toe Solver (E)
 
 ### Linked Lists
 
@@ -54,6 +55,8 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Move all zeros to the end of the array (E)
 - Dumb Pacman (M)
 - Merge Sort Test (N/A) console.table()
+- Median Sort (M)
+- Potion Mixing (M)
 
 ### Binary Trees
 
