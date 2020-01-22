@@ -107,6 +107,7 @@ You can require a Weighted Non-Directed Graph Constructor for testing purposes u
 - Jump Game (M)
 - Handshake Problem (E)
 - Fibonacci Sequence (E)
+- Min Falling Path Sum (M)
 
 ### Heaps
 
