@@ -25,6 +25,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Return the most used character in a string (E)
 - Interweave strings (E)
 - Tic Tac Toe Solver (E)
+- Remove Third Character (E)
 
 ### Linked Lists
 
