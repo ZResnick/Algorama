@@ -58,6 +58,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Merge Sort Test (N/A) console.table()
 - Median Sort (M)
 - Potion Mixing (M)
+- Max sum of equal sums (M)
 
 ### Binary Trees
 
