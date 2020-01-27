@@ -61,6 +61,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Max sum of equal sums (M)
 - Efficiently search a matrix (M)
 - Merge in place (E)
+- Fruit into baskets (M)
 
 ### Binary Trees
 
