@@ -112,6 +112,7 @@ You can require a Weighted Non-Directed Graph Constructor for testing purposes u
 - Handshake Problem (E)
 - Fibonacci Sequence (E)
 - Min Falling Path Sum (M)
+- Maximum SUb Array (E)
 
 ### Heaps
 
