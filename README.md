@@ -59,6 +59,8 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Median Sort (M)
 - Potion Mixing (M)
 - Max sum of equal sums (M)
+- Efficiently search a matrix (M)
+- Merge in place (E)
 
 ### Binary Trees
 
