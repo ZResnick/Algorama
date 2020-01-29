@@ -67,6 +67,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Efficiently search a matrix (M)
 - Merge in place (E)
 - Fruit into baskets (M)
+- Two City Scheduling Costs (M)
 
 ### Binary Trees
 
