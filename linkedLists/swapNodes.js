@@ -7,7 +7,7 @@ Example:
 Given 1->2->3->4, you should return the list as 2->1->4->3.
 */
 
-//Recursive Solution
+// //Recursive Solution
 var swapPairs = function(head) {
   if (!head || !head.next) return head;
   let nextNode = head.next;
@@ -21,7 +21,16 @@ var swapPairs = function(head) {
 
 const head = {
   val: 1,
-  next: { val: 2, next: { val: 3, next: { val: 4, next: null } } },
+  next: {
+    val: 2,
+    next: {
+      val: 3,
+      next: {
+        val: 4,
+        next: { val: 5, next: { val: 6, next: { val: 7, next: null } } },
+      },
+    },
+  },
 };
 
 console.log(swapPairs(head));
