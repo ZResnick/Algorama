@@ -79,6 +79,7 @@ You can require a BST creator from ./treeCreator for testing purposes using ----
 - Minimum Difference (E)
 - Range Sum (E)
 - Pre-order Traversal of nAry tree (E)
+- Validate BST (M)
 
 ### Recursion, Backtracking, Game Theory
 
