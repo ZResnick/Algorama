@@ -26,6 +26,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Interweave strings (E)
 - Tic Tac Toe Solver (E)
 - Remove Third Character (E)
+- One Dimensional Candy Crush (M) Stack Problem
 
 ### Linked Lists
 
