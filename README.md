@@ -38,6 +38,10 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Merge a Sorted Linked List (M)
 - Remove nth Node (M)
 - Do They Merge? (E)
+- Add Two Numbers (M)
+- LRU Cache (M)
+- Odds and Evens (M)
+- Flatten a Multilevel Doubly Linked List (M)
 
 ### Array Manipulation
 
@@ -114,6 +118,7 @@ You can require a Weighted Non-Directed Graph Constructor for testing purposes u
 - Fibonacci Sequence (E)
 - Min Falling Path Sum (M)
 - Maximum SUb Array (E)
+- House Robber (E)
 
 ### Heaps
 
@@ -134,3 +139,4 @@ You can require a:
 - Count the ones in the Binary Representation of a Given Integer, the Hamming Weight (M)
 - Count the non-zero numbers in the n-Ary Representation of a Given Integer, the N-Hamming Weight (M)
 - Currying Function (M)
+- Pumpkin Picker (E)
