@@ -80,6 +80,7 @@ You can require a BST creator from ./treeCreator for testing purposes using ----
 - Range Sum (E)
 - Pre-order Traversal of nAry tree (E)
 - Validate BST (M)
+- Flatten a Binary Tree
 
 ### Recursion, Backtracking, Game Theory
 
