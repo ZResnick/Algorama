@@ -67,7 +67,8 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Efficiently search a matrix (M)
 - Merge in place (E)
 - Fruit into baskets (M)
-- Two City Scheduling Costs (M)
+- Two City Scheduling Costs (M) BLOOMBERG QUESTION
+- Transaction History (M) BLOOMBERG QUESTION
 
 ### Binary Trees
 
@@ -144,3 +145,8 @@ You can require a:
 - Count the non-zero numbers in the n-Ary Representation of a Given Integer, the N-Hamming Weight (M)
 - Currying Function (M)
 - Pumpkin Picker (E)
+
+### Design Questions
+
+- LRU Cache (M) BLOOMBERG QUESTION
+- Min Stack with Constant Time Operations (E) BLOOMBERG QUESTION

@@ -70,18 +70,10 @@ class LRU {
       this.remove(key);
       // write node again to the head of LinkedList to make it most recently used
       this.write(key, value);
-
       return value;
     }
 
     console.log(`Item not available in cache for key ${key}`);
-  }
-
-  clear() {
-    this.head = null;
-    this.tail = null;
-    this.size = 0;
-    this.cache = {};
   }
 
   ensureLimit() {
@@ -90,6 +82,12 @@ class LRU {
     }
   }
 
+  clear() {
+    this.head = null;
+    this.tail = null;
+    this.size = 0;
+    this.cache = {};
+  }
   // Invokes the callback function with every node of the chain and the index of the node.
   forEach(fn) {
     let node = this.head;
