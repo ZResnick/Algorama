@@ -10,13 +10,14 @@ This repo is built for algorithm problems and practice, with the main goal being
 
 ### String Manipulation
 
-- Roman Numerals to Integers (E)
-- Longest Uncommon Substring (M)
+- Roman Numerals to Integers (E) BLOOMBERG QUESTION
+- Longest Uncommon Substring (M) BLOOMBERG QUESTION
+- Reverse an Integer (E) BLOOMBERG QUESTION
 - Are these Strings Isomorphic? (M)
 - Number of Matching Subsequences (M)
 - Needle in a Haystack (E)
-- All Permutations of a string (M)
-- Validate Parentheses (E)
+- All Permutations of a string (M) BLOOMBERG QUESTION
+- Validate Parentheses (E) BLOOMBERG QUESTION
 - Balloon Finder (E)
 - Uncommon Words (E)
 - License Creator (E)
@@ -27,6 +28,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Tic Tac Toe Solver (E)
 - Remove Third Character (E)
 - One Dimensional Candy Crush (M) Stack Problem
+- First Unique Character in a String (E) BLOOMBERG QUESTION
 
 ### Linked Lists
 
@@ -36,13 +38,13 @@ This repo is built for algorithm problems and practice, with the main goal being
   - Tortoise and the Hare method
 - Remove Duplicates (E)
 - Remove All Targeted Values from a Linked List (E)
-- Merge a Sorted Linked List (M)
+- Merge a Sorted Linked List (M) BLOOMBERG QUESTION
 - Remove nth Node (M)
-- Do They Merge? (E)
-- Add Two Numbers (M)
+- Do They Merge? (E) BLOOMBERG QUESTION
+- Add Two Numbers (M) BLOOMBERG QUESTION
 - LRU Cache (M)
-- Odds and Evens (M)
-- Flatten a Multilevel Doubly Linked List (M)
+- Odds and Evens (M) BLOOMBERG QUESTION
+- Flatten a Multilevel Doubly Linked List (M) BLOOMBERG QUESTION
 
 ### Array Manipulation
 
@@ -52,23 +54,23 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Number of Islands (M)
 - Merge Sort (E)
 - Rotate a Matrix (M)
-- Best Time to Buy and Sell Stocks (E)
+- Best Time to Buy and Sell Stocks (E) BLOOMBERG QUESTION
 - Find the Duplicate Number (M)
 - Generate Pacsal's Triangle (E)
-- Product of Array Except Self (naive and optimized) (M)
+- Product of Array Except Self (naive and optimized) (M) BLOOMBERG QUESTION
 - Minimum Domino Flip (M)
-- Pair Sum (E)
-- Move all zeros to the end of the array (E)
+- Pair Sum (E) BLOOMBERG QUESTION
+- Move all zeros to the end of the array (E) BLOOMBERG QUESTION
 - Dumb Pacman (M)
 - Merge Sort Test (N/A) console.table()
 - Median Sort (M)
 - Potion Mixing (M)
 - Max sum of equal sums (M)
 - Efficiently search a matrix (M)
-- Merge in place (E)
+- Merge in Place (E) BLOOMBERG QUESTION
 - Fruit into baskets (M)
 - Two City Scheduling Costs (M) BLOOMBERG QUESTION
-- Transaction History (M) BLOOMBERG QUESTION
+- Transaction History - Invalid Transactions (M) BLOOMBERG QUESTION
 
 ### Binary Trees
 
@@ -76,21 +78,21 @@ You can require a BST creator from ./treeCreator for testing purposes using ----
 
 - Simple Binary Search (E)
 - Merge Binary Trees (E)
-- Max Depth of a Binary Tree (M)
-- Reverse Breadth First Levels (E)
+- Max Depth of a Binary Tree (M) BLOOMBERG QUESTION
+- Reverse Breadth First Levels (E) BLOOMBERG QUESTION
 - Minimum Difference (E)
 - Range Sum (E)
 - Pre-order Traversal of nAry tree (E)
-- Validate BST (M)
-- Flatten a Binary Tree
+- Validate BST (M) BLOOMBERG QUESTION
+- Flatten a Binary Tree (E) BLOOMBERG QUESTION
 
 ### Recursion, Backtracking, Game Theory
 
-- Generate Parentheses (H)
+- Generate Parentheses (H) BLOOMBERG QUESTION
 - N Queens (H)
 - N Queens Naive (H) _Works but is not ideal_
 - Does Word Exist in Matrix (M)
-- Which Words Exist in Matrix (M)
+- Which Words Exist in Matrix - Word Search (M) BLOOMBERG QUESTION
 - Path With Maximum Gold (M)
 
 ### Graphs
@@ -107,23 +109,23 @@ You can require a Weighted Non-Directed Graph Constructor for testing purposes u
 
 ### Dynamic Programming
 
-- Coin Change (M)
+- Coin Change (M) BLOOMBERG QUESTION
 - Unique Paths I (M)
 - Unique Paths II (M)
-- Min Path Sum (M)
+- Min Path Sum (M) BLOOMBERG QUESTION
 - Min Path of a Triangle (M)
 - River Sizes (M)
-- Levenshtein Distance (H)
-- Number of Islands (M)
+- Levenshtein Distance (H) BLOOMBERG QUESTION
+- Number of Islands (M) BLOOMBERG QUESTION
 - Longest Increasing Subsequence (M)
 - Subset Sum (M)
-- Word Break (M)
+- Word Break (M) BLOOMBERG QUESTION
 - Jump Game (M)
 - Handshake Problem (E)
 - Fibonacci Sequence (E)
 - Min Falling Path Sum (M)
-- Maximum SUb Array (E)
-- House Robber (E)
+- Maximum Sub Array (E) BLOOMBERG QUESTION
+- House Robber (E) BLOOMBERG QUESTION
 
 ### Heaps
 
@@ -150,3 +152,40 @@ You can require a:
 
 - LRU Cache (M) BLOOMBERG QUESTION
 - Min Stack with Constant Time Operations (E) BLOOMBERG QUESTION
+
+### Bloomberg Questions by Frequency
+
+[Flatten a Nested Linked List](linkedLists/flattenANestedDoublyLinkedList.js)
+[Two City Scheduling](arrays/twoCityScheduling.js)
+[Invalid Transactions](arrays/transactionHistory.js)
+[LRU Cache](designQuestions/lruCache.js)
+[Number of Islands](dynamicProgramming/numOfIslands.js)
+[Min Stack](designQuestions/minStackConstantTime.js)
+[Word Break](dynamicProgramming/wordBreak.js)
+[Add Two Numbers](linkedLists/addTwoNumbers.js)
+[Move Zeroes](arrays/moveZerosToEnd.js)
+[Pair Sum](arrays/pairSum.js)
+[Odds and Evens](linkedLists/oddsAndEvens.js)
+[First Unique Character In A String](stringManipulation/firstUniqueCharacter.js)
+[Longest Uncommon Sub String](stringManipulation/longestSubstring.js)
+[Word Search](gameTheory/whichWordsExist.js)
+[Levensthein Distance](dynamicProgramming/LevenshteinDistance.js)
+[Valid Anagram](TO DO)
+[Generate Parentheses](gameTheory/generateParens.js)
+[Merge Two Sorted Lists](linkedLists/mergeSortedLists.js)
+[Intersection of Two Sorted Lists](linkedLists/doTheyMerge.js)
+[Validate BST](binaryTrees/validateBST.js)
+[Permutations](arrays/allPermutations.js)
+[Coin Change](dynamicProgramming/coinChange.js)
+[Flatten a BST to Linked List](binaryTrees/flattenTree.js)
+[Merge Sorted Array](arrays/mergeInPlace.js)
+[BST Level Order Traversal](binaryTrees/reverseBreadthFirst.js)
+[Validate Parens](stringManipulation/validateParentheses.js)
+[Roman to Integer](stringManipulation/RomanToInt.js)
+[Min Path Sum](dynamicProgramming/minPathSum.js)
+[Best Time to Buy and Sell Stock](arrays/buyAndSellStocks.js)
+[House Robber](dynamicProgramming/houseRobber.js)
+[Product of Array Except Self](arrays/productExceptSelf.js)
+[Max Depth of Binary Tree](binaryTrees/maxDepth.js)
+[Maximum Sub Array](dynamicProgramming/maximumSubarray.js)
+[Reverse Integer](stringManipulation/revereseInteger.js)
