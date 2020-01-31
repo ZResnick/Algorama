@@ -45,6 +45,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - LRU Cache (M)
 - Odds and Evens (M) BLOOMBERG QUESTION
 - Flatten a Multilevel Doubly Linked List (M) BLOOMBERG QUESTION
+- Insert Into a Sorted Cyclical List (M) BLOOMBERG QUESTION
 
 ### Array Manipulation
 
@@ -71,6 +72,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Fruit into baskets (M)
 - Two City Scheduling Costs (M) BLOOMBERG QUESTION
 - Transaction History - Invalid Transactions (M) BLOOMBERG QUESTION
+- Meeting Rooms II (M) BLOOMBERG QUESTION
 
 ### Binary Trees
 
@@ -152,6 +154,7 @@ You can require a:
 
 - LRU Cache (M) BLOOMBERG QUESTION
 - Min Stack with Constant Time Operations (E) BLOOMBERG QUESTION
+- First Unique Number in Constant Tim (M) BLOOMBERG QUESTION
 
 ### Bloomberg Questions by Frequency
 
@@ -164,15 +167,17 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [Number of Islands](dynamicProgramming/numOfIslands.js)
 [Min Stack](designQuestions/minStackConstantTime.js)
 [Word Break](dynamicProgramming/wordBreak.js)
+[Meeting Rooms II](arrays/meetingRooms.js)
 [Add Two Numbers](linkedLists/addTwoNumbers.js)
 [Move Zeroes](arrays/moveZerosToEnd.js)
 [Pair Sum](arrays/pairSum.js)
 [Odds and Evens](linkedLists/oddsAndEvens.js)
 [First Unique Character In A String](stringManipulation/firstUniqueCharacter.js)
+[Insert Into a Sorted Cyclical List](linkedLists/insertIntoSortedCircularList.js)
 [Longest Uncommon Sub String](stringManipulation/longestSubstring.js)
 [Word Search](gameTheory/whichWordsExist.js)
-[Levensthein Distance](dynamicProgramming/LevenshteinDistance.js)
-[Valid Anagram](TO DO)
+[Levenshtein Distance](dynamicProgramming/LevenshteinDistance.js)
+[Valid Anagram](stringManipulation/validAnagram.js)
 [Generate Parentheses](gameTheory/generateParens.js)
 [Merge Two Sorted Lists](linkedLists/mergeSortedLists.js)
 [Intersection of Two Sorted Lists](linkedLists/doTheyMerge.js)
@@ -191,3 +196,6 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [Max Depth of Binary Tree](binaryTrees/maxDepth.js)
 [Maximum Sub Array](dynamicProgramming/maximumSubarray.js)
 [Reverse Integer](stringManipulation/revereseInteger.js)
+
+Frequency not listed:
+[First Unique Character in Constant Time](designQuestions/firstUniqueNumber.js)
