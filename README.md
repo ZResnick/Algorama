@@ -27,8 +27,9 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Interweave strings (E)
 - Tic Tac Toe Solver (E)
 - Remove Third Character (E)
-- One Dimensional Candy Crush (M) Stack Problem
+- One Dimensional Candy Crush (M) Stack Problem BLOOMBERG QUESTION
 - First Unique Character in a String (E) BLOOMBERG QUESTION
+- Remove all Duplicates (E) BLOOMBERG QUESTION
 
 ### Linked Lists
 
@@ -73,6 +74,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Two City Scheduling Costs (M) BLOOMBERG QUESTION
 - Transaction History - Invalid Transactions (M) BLOOMBERG QUESTION
 - Meeting Rooms II (M) BLOOMBERG QUESTION
+- Elimination Game (M) BLOOMBERG QUESTION
 
 ### Binary Trees
 
@@ -155,7 +157,8 @@ You can require a:
 
 - LRU Cache (M) BLOOMBERG QUESTION
 - Min Stack with Constant Time Operations (E) BLOOMBERG QUESTION
-- First Unique Number in Constant Tim (M) BLOOMBERG QUESTION
+- First Unique Number in Constant Time (M) BLOOMBERG QUESTION
+- Insert Delete GetRandom O(1)(M) BLOOMBERG QUESTION
 
 ### Bloomberg Questions by Frequency
 
@@ -168,8 +171,12 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [LRU Cache](designQuestions/lruCache.js)
 [Number of Islands](dynamicProgramming/numOfIslands.js)
 [Min Stack](designQuestions/minStackConstantTime.js)
+[Insert Delete GetRandom O(1)](designQuestions/insertDeleteGettRandomConstantTime.js)
 [Word Break](dynamicProgramming/wordBreak.js)
 [Meeting Rooms II](arrays/meetingRooms.js)
+[Elimination Game](arrays/eliminationGame.js)
+[Remove Duplicates](stringManipulation/removeAllDuplicatesCandyCrushStyle.js)
+[One Dimensional Candy Crush](stringManipulation/oneDimensionalCandyCrush.js)
 [Add Two Numbers](linkedLists/addTwoNumbers.js)
 [Move Zeroes](arrays/moveZerosToEnd.js)
 [Pair Sum](arrays/pairSum.js)
