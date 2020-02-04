@@ -75,6 +75,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Transaction History - Invalid Transactions (M) BLOOMBERG QUESTION
 - Meeting Rooms II (M) BLOOMBERG QUESTION
 - Elimination Game (M) BLOOMBERG QUESTION
+- Valid Word Square (E) BLOOMBERG QUESTION
 
 ### Binary Trees
 
@@ -174,6 +175,7 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [Insert Delete GetRandom O(1)](designQuestions/insertDeleteGettRandomConstantTime.js)
 [Word Break](dynamicProgramming/wordBreak.js)
 [Meeting Rooms II](arrays/meetingRooms.js)
+[Valid Word Square](arrays/validWordSquare.js)
 [Elimination Game](arrays/eliminationGame.js)
 [Remove Duplicates](stringManipulation/removeAllDuplicatesCandyCrushStyle.js)
 [One Dimensional Candy Crush](stringManipulation/oneDimensionalCandyCrush.js)
