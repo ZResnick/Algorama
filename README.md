@@ -30,6 +30,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - One Dimensional Candy Crush (M) Stack Problem BLOOMBERG QUESTION
 - First Unique Character in a String (E) BLOOMBERG QUESTION
 - Remove all Duplicates (E) BLOOMBERG QUESTION
+- Decode String (H) BLOOMBERG QUESTION
 
 ### Linked Lists
 
@@ -170,6 +171,7 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [Two City Scheduling](arrays/twoCityScheduling.js)
 [Invalid Transactions](arrays/transactionHistory.js)
 [All Paths from Start to End in an Acyclic Graph](graphs/allPathsInAcyclic.js)
+[Decode String](stringManipulation/decode.js)
 [LRU Cache](designQuestions/lruCache.js)
 [Number of Islands](dynamicProgramming/numOfIslands.js)
 [Min Stack](designQuestions/minStackConstantTime.js)
