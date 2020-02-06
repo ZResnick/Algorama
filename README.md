@@ -93,6 +93,7 @@ You can require a BST creator from ./treeCreator for testing purposes using ----
 - Pre-order Traversal of nAry tree (E)
 - Validate BST (M) BLOOMBERG QUESTION
 - Flatten a Binary Tree (E) BLOOMBERG QUESTION
+- Invert a Binary Tree (E)
 
 ### Recursion, Backtracking, Game Theory
 
@@ -115,6 +116,7 @@ You can require a Weighted Non-Directed Graph Constructor for testing purposes u
 - Does Path Exist Between Two Nodes in a Graph (E)
 - Djikstras Shortest Path Algorithm (M)
 - All Paths from Start to End in an Acyclic Graph (M) BLOOMBERG QUESTION
+- Keys and Rooms - Can you Escape?? (M) SIMON DATA
 
 ### Dynamic Programming
 
@@ -201,7 +203,7 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [Validate BST](binaryTrees/validateBST.js)
 [Permutations](arrays/allPermutations.js)
 [Coin Change](dynamicProgramming/coinChange.js)
-[Flatten a BST to Linked List](binaryTrees/flattenTree.js)
+[Flatten a Binary Tree to Linked List](binaryTrees/flattenTree.js)
 [Merge Sorted Array](arrays/mergeInPlace.js)
 [BST Level Order Traversal](binaryTrees/reverseBreadthFirst.js)
 [Validate Parens](stringManipulation/validateParentheses.js)
