@@ -78,6 +78,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Elimination Game (M) BLOOMBERG QUESTION
 - Valid Word Square (E) BLOOMBERG QUESTION
 - Missing Element in Sorted Array (E) BLOOMBERG QUESTION
+- 2-D Candy Crush (M) BLOOMBERG QUESTION
 
 ### Binary Trees
 
@@ -171,6 +172,7 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [Two City Scheduling](arrays/twoCityScheduling.js)
 [Invalid Transactions](arrays/transactionHistory.js)
 [All Paths from Start to End in an Acyclic Graph](graphs/allPathsInAcyclic.js)
+[2-D Candy Crush](arrays/2DCanyCrush.js)
 [Decode String](stringManipulation/decode.js)
 [LRU Cache](designQuestions/lruCache.js)
 [Number of Islands](dynamicProgramming/numOfIslands.js)
