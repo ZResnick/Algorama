@@ -94,6 +94,7 @@ You can require a BST creator from ./treeCreator for testing purposes using ----
 - Validate BST (M) BLOOMBERG QUESTION
 - Flatten a Binary Tree (E) BLOOMBERG QUESTION
 - Invert a Binary Tree (E)
+- Populating Next Right Pointer (M) BLOOMBERG QUESTION
 
 ### Recursion, Backtracking, Game Theory
 
@@ -182,6 +183,7 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [Min Stack](designQuestions/minStackConstantTime.js)
 [Insert Delete GetRandom O(1)](designQuestions/insertDeleteGettRandomConstantTime.js)
 [Word Break](dynamicProgramming/wordBreak.js)
+[Populating Next Right Pointer](binaryTrees/populatingNextRightPointers.js)
 [Kill Process](graphs/killProcess.js)
 [Meeting Rooms II](arrays/meetingRooms.js)
 [Missing Element in Sorted Array](arrays/missingElementInSortedArray.js)

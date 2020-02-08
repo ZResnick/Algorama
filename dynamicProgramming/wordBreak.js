@@ -33,6 +33,7 @@ const wordBreak = (str, wordDict) => {
       }
     }
   }
+  console.log(dp);
   return dp[str.length];
 };
 
