@@ -117,6 +117,7 @@ You can require a Weighted Non-Directed Graph Constructor for testing purposes u
 - Djikstras Shortest Path Algorithm (M)
 - All Paths from Start to End in an Acyclic Graph (M) BLOOMBERG QUESTION
 - Keys and Rooms - Can you Escape?? (M) SIMON DATA
+- Kill Process (M) BLOOMBERG QUESTION
 
 ### Dynamic Programming
 
@@ -181,6 +182,7 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [Min Stack](designQuestions/minStackConstantTime.js)
 [Insert Delete GetRandom O(1)](designQuestions/insertDeleteGettRandomConstantTime.js)
 [Word Break](dynamicProgramming/wordBreak.js)
+[Kill Process](graphs/killProcess.js)
 [Meeting Rooms II](arrays/meetingRooms.js)
 [Missing Element in Sorted Array](arrays/missingElementInSortedArray.js)
 [Valid Word Square](arrays/validWordSquare.js)
