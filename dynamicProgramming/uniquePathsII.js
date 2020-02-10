@@ -1,7 +1,7 @@
 /* eslint-disable complexity */
 /*
 
-A robot is located at the top-left corner of a m x n grid.  Obstacles are represwented as 1's
+A robot is located at the top-left corner of a m x n grid.  Obstacles are represented as 1's
 
 The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid.
 

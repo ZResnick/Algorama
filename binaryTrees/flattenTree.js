@@ -24,7 +24,7 @@ The flattened tree should look like:
 */
 
 var flatten = function(root) {
-  //inorder traversal: store all the nodes in an array
+  //pre-order traversal: store all the nodes in an array
   //iterate over array changing left to null and the right to i+1
   if (!root) return root;
   let helper = (node, arr = []) => {

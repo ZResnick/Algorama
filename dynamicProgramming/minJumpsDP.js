@@ -31,7 +31,7 @@ const minJumps = arr => {
     //store the current dp value at that place
     let minJumpsToPlace = dp[i];
 
-    //go though the dp array ahead of the current pl;ace the amount of possible jumps
+    //go though the dp array ahead of the current location by the amount of possible jumps
     for (let j = i + 1; j < i + curJump + 1 && j < arr.length; j++) {
       //if the minJumps at place + 1 is less than the current minJumps, change it
       if (minJumpsToPlace + 1 < dp[j]) dp[j] = minJumpsToPlace + 1;

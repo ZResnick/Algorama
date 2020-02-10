@@ -22,9 +22,8 @@ Note that an empty tree is represented by NULL, therefore you would see the expe
 const searchBST = (root, val) => {
   if (root.val === val) return root;
   if (root.left) {
-    return searchBST(root.left, val) && searchBST(root.left, val);
-    // let tree = searchBST(root.left, val);
-    // if (tree) return tree;
+    let tree = searchBST(root.left, val);
+    if (tree) return tree;
   }
   if (root.right) {
     let tree = searchBST(root.right, val);

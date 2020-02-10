@@ -31,13 +31,15 @@ Explanation: The root node's value is 5 but its right child's value is 4.
 
 var isValidBST = root => {
   if (!root) return true;
-  let helper = (node, nums = []) => {
-    if (node.left) helper(node.left, nums);
+  let nums = [];
+  //in order traversal
+  let helper = node => {
+    if (node.left) helper(node.left);
     nums.push(node.val);
-    if (node.right) helper(node.right, nums);
-    return nums;
+    if (node.right) helper(node.right);
   };
 
+  //check to see if in  order traversal resulted in an ordered array
   let list = helper(root);
   for (let i = 0; i < list.length - 1; i++) {
     if (list[i] >= list[i + 1]) return false;

@@ -65,5 +65,6 @@ const levenshteinDistance = (str1, str2) => {
   return grid[str1.length][str2.length];
 };
 
-console.log(levenshteinDistance('intention', 'execution'));
-console.log(levenshteinDistance('horse', 'ros'));
+// console.log(levenshteinDistance('intention', 'execution'));
+// console.log(levenshteinDistance('ros', 'horse'));
+console.log(levenshteinDistance('morsel', 'tinsel'));

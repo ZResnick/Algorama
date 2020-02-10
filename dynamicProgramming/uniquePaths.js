@@ -9,7 +9,7 @@ How many possible unique paths are there?
 */
 
 const uniquePaths = (rows, cols) => {
-  // The Below works too bu doens tlook as nice.
+  // The Below works too but doesn't look as nice.
   // let grid = Array(rows).fill(Array(cols).fill(1));
 
   let grid = Array(rows);

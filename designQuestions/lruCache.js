@@ -39,6 +39,7 @@ class LRU {
   remove(key) {
     const node = this.cache[key];
 
+    //deal with the previous
     //if theres a previous node, set previous.next to current.next
     //else, the current node is the head so set the this.head to current.next
     if (node.prev !== null) {
@@ -47,6 +48,7 @@ class LRU {
       this.head = node.next;
     }
 
+    //deal with the next
     //if theres a next node, set next.prev to current.previous
     //else the current node is the tail so set this.tail = previous.next
     if (node.next !== null) {
@@ -60,7 +62,7 @@ class LRU {
     this.size--;
   }
 
-  // Read from cache map and make that node as new Head of LinkedList
+  // Read from cache map and redefine that node as new Head of LinkedList
   read(key) {
     //check if the node exists
     if (this.cache[key]) {

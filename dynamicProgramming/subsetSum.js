@@ -1,5 +1,5 @@
 /*
-Given an array of integers and a target, determine if any non=repeating values add up to the target.
+Given an array of integers and a target, determine if any non-repeating values add up to the target.
 
 Ex 2.
 Input: [2, 3, 1, 10, 5], 9
@@ -19,11 +19,11 @@ const subsetSum = (arr, target) => {
   for (let i = 0; i < arr.length; i++) {
     let newNums = [];
     for (let j = i + 1; j < dp.length; j++) {
-      console.log(dp);
-      if (arr[i] + dp[j] === target) return true;
-      if (arr[i] + dp[j] < target && !memo[arr[i] + dp[j]]) {
-        newNums.push(arr[i] + dp[j]);
-        memo[arr[i] + dp[j]] = true;
+      let currentSum = arr[i] + dp[j];
+      if (currentSum === target) return true;
+      if (currentSum < target && !memo[currentSum]) {
+        newNums.push(currentSum);
+        memo[currentSum] = true;
       }
     }
     dp = [...dp, ...newNums];
@@ -31,4 +31,5 @@ const subsetSum = (arr, target) => {
   return false;
 };
 
+console.log(subsetSum([2, 3, 1, 10, 5], 9));
 console.log(subsetSum([2, 3, 1, 10, 5], 100));

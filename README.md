@@ -31,6 +31,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - First Unique Character in a String (E) BLOOMBERG QUESTION
 - Remove all Duplicates (E) BLOOMBERG QUESTION
 - Decode String (H) BLOOMBERG QUESTION
+- Remove All Duplicates in a String (M) BLOOMBERG QUESTION
 
 ### Linked Lists
 
@@ -184,6 +185,7 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [Insert Delete GetRandom O(1)](designQuestions/insertDeleteGettRandomConstantTime.js)
 [Word Break](dynamicProgramming/wordBreak.js)
 [Populating Next Right Pointer](binaryTrees/populatingNextRightPointers.js)
+[Remove All Duplicates in a String II](stringManipulation/removeKDuplicates.js)
 [Kill Process](graphs/killProcess.js)
 [Meeting Rooms II](arrays/meetingRooms.js)
 [Missing Element in Sorted Array](arrays/missingElementInSortedArray.js)

@@ -23,6 +23,8 @@ const doTheyMerge = (headA, headB) => {
   if (!headA || !headB) return null;
   let top = headA;
   let bot = headB;
+  //The count tracks how many times we've reached the end of a list.
+  //If that happens three times, its false
   let counter = 0;
   while (counter < 3) {
     if (top === bot) return top;

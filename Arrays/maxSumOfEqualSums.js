@@ -6,7 +6,10 @@ Given A = [42, 33, 60], the function should return 102. The digits of all the nu
 Given A = [51, 32, 43], the function should return -1, since all numbers in A have digits that add up to different, unique sums.
 */
 
-//naive appraoch because its n*n
+//Note that in both approaches the count counts iterations to demonstrate
+//how much better the optimized approach is.
+
+//naive approach because its n*n
 const maxSumOfEqualSums = arr => {
   let max = -1;
   let count = 0;
@@ -31,6 +34,8 @@ const maxSumOfEqualSums = arr => {
 };
 
 //better approach
+//this approach makes a hash table where the keys are the sum of the digits, and
+// the values are lists fo the actual numbers.
 const maxSumOfEqualSumsBetter = arr => {
   let max = -1;
   let count = 0;

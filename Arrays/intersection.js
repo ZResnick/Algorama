@@ -1,3 +1,8 @@
+/*
+Given two sorted arrays, return an array of all the elements that
+can be found in both arrays
+*/
+
 function intersection(arrA, arrB) {
   const shared = [];
   let idxA = 0;
@@ -5,7 +10,7 @@ function intersection(arrA, arrB) {
   while (idxA < arrA.length && idxB < arrB.length) {
     const elemA = arrA[idxA];
     const elemB = arrB[idxB];
-    if (elemA == elemB) {
+    if (elemA === elemB) {
       shared.push(elemA);
     }
     if (elemA <= elemB) {

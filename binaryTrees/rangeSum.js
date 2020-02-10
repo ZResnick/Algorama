@@ -11,11 +11,15 @@ Input: root = [10,5,15,3,7,13,18,1,null,6], L = 6, R = 10
 Output: 23
 */
 
-const rangeSumBST = (root, L, R, total = [0]) => {
-  if (L <= root.val && root.val <= R) total[0] += root.val;
-  if (root.left) rangeSumBST(root.left, L, R, total);
-  if (root.right) rangeSumBST(root.right, L, R, total);
-  return total[0];
+const rangeSumBST = (root, L, R) => {
+  let total = 0;
+  const helper = node => {
+    if (L <= node.val && node.val <= R) total += node.val;
+    if (node.left) helper(node.left);
+    if (node.right) helper(node.right);
+  };
+  helper(root);
+  return total;
 };
 
 //TEST CASES

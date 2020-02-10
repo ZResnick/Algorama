@@ -22,16 +22,15 @@ const grid = [
 console.log(numIslands(grid));    // 3
 
 Approach:
-1.  Iterate throiugh each row
+1.  Iterate through each row
 2.  Within each row, iterate through each column
 3.  If a cell is a 1, call the helper function passing to it the grid, and the coords of the found 1
 
     Helper Function:
     1.  First, change the current cell to a 0
-    2.  You only need to check down and right...
-    3.  As long as current cell isnt in the last column or the  bottom row, check the right cell and the bottom cell
-    4.  If that cell is a 1, call the helper on that cell too
-    5.  This will run until all the cells on that island are cleared
+    2.  As long as current cell isn't in the last column or the  bottom row, check the right cell and the bottom cell
+    3.  If that cell is a 1, call the helper on that cell too
+    4.  This will run until all the cells on that island are cleared
 
 4.  Increase the counter and the whole for loop will iterate.
 
@@ -103,9 +102,17 @@ let grid4 = [
   [1, 1, 1, 1, 1],
 ];
 
-let grid5 = [[1, 1, 1], [0, 1, 0], [1, 1, 1]];
+let grid5 = [
+  [1, 1, 1],
+  [0, 1, 0],
+  [1, 1, 1],
+];
 
-let grid6 = [[1, 0, 1, 1, 1], [1, 0, 1, 0, 1], [1, 1, 1, 0, 1]];
+let grid6 = [
+  [1, 0, 1, 1, 1],
+  [1, 0, 1, 0, 1],
+  [1, 1, 1, 0, 1],
+];
 
 console.log(numOfIslands(grid1));
 console.log(numOfIslands(grid2));

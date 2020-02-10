@@ -48,6 +48,7 @@ class RandomizedSet {
   }
 
   //Removes a value from the set. Returns true if the set contained the specified element.
+  //when removing, switch the element to remove with the last element of the list and redefine the values in the cache
   remove(val) {
     if (this.cache[val] >= 0) {
       let index = this.cache[val];

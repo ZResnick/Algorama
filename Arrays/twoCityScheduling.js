@@ -21,7 +21,7 @@ The total minimum cost is 10 + 30 + 50 + 20 = 110 to have half the people interv
 var twoCitySchedCost = function(costs) {
   //order the array by the cost of a - b.  If a is cheaper then b, this number will           be negative but will represent the money you will save by flying to a instead         of b.
   //At this point, you will have a list organized by the money you would save flying         to A from greatest savings to least.
-  //Then iterate through the array taking the cost of a fro the first half and the           cost of b for the second half.
+  //Then iterate through the array taking the cost of a from the first half and the           cost of b for the second half.
 
   const moneyLost = arr => {
     return arr[0] - arr[1];
