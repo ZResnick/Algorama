@@ -32,6 +32,8 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Remove all Duplicates (E) BLOOMBERG QUESTION
 - Decode String (H) BLOOMBERG QUESTION
 - Remove All Duplicates in a String (M) BLOOMBERG QUESTION
+- Duplicate Values First (M) BLOOMBERG QUESTION
+- Find and Replace in String (M) SIMON DATA QUESTION
 
 ### Linked Lists
 
@@ -80,6 +82,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Valid Word Square (E) BLOOMBERG QUESTION
 - Missing Element in Sorted Array (E) BLOOMBERG QUESTION
 - 2-D Candy Crush (M) BLOOMBERG QUESTION
+- Valid Triangles (M) BLOOMBERG QUESTION
 
 ### Binary Trees
 
@@ -185,6 +188,7 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [Insert Delete GetRandom O(1)](designQuestions/insertDeleteGettRandomConstantTime.js)
 [Word Break](dynamicProgramming/wordBreak.js)
 [Populating Next Right Pointer](binaryTrees/populatingNextRightPointers.js)
+[Valid Triangles](arrays/validTriangles.js)
 [Remove All Duplicates in a String II](stringManipulation/removeKDuplicates.js)
 [Kill Process](graphs/killProcess.js)
 [Meeting Rooms II](arrays/meetingRooms.js)
