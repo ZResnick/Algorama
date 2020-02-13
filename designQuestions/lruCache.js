@@ -1,4 +1,101 @@
 /* eslint-disable complexity */
+
+//My best attempt
+class Node2 {
+  constructor(key, val) {
+    this.key = key;
+    this.val = val;
+    this.next = this.prev = null;
+  }
+}
+
+class LRUCache {
+  constructor(capacity) {
+    this.capacity = capacity;
+    this.cache = {};
+    this.size = 0;
+    this.tail = { next: null, prev: null };
+    this.head = { next: this.tail, prev: null };
+    this.tail.prev = this.head;
+  }
+
+  put(key, value) {
+    if (this.cache[key]) {
+      let node = this.cache[key];
+      node.val = value;
+      this.get(key);
+    } else {
+      let node = new Node2(key, value);
+      this.trim();
+      let first = this.head.next;
+      this.head.next = node;
+      node.prev = this.head;
+      node.next = first;
+      first.prev = node;
+      this.size++;
+      this.cache[key] = node;
+    }
+  }
+
+  get(key) {
+    if (this.cache[key]) {
+      let node = this.cache[key];
+      let next = node.next;
+      let prev = node.prev;
+      prev.next = next;
+      next.prev = prev;
+      let first = this.head.next;
+      this.head.next = node;
+      node.prev = this.head;
+      node.next = first;
+      first.prev = node;
+      return node.val;
+    }
+    return -1;
+  }
+
+  trim() {
+    if (this.size === this.capacity) {
+      let last = this.tail.prev;
+      let secondToLast = last.prev;
+      this.tail.prev = secondToLast;
+      secondToLast.next = this.tail;
+      this.size--;
+      delete this.cache[last.key];
+    }
+  }
+
+  clear() {
+    this.head = null;
+    this.tail = null;
+    this.size = 0;
+    this.cache = {};
+  }
+
+  //runs a function on each value and includes the relative index of that value
+  forEach(fn) {
+    let node = this.head.next;
+    let counter = 0;
+    while (node !== this.tail) {
+      fn(node.val, counter);
+      node = node.next;
+      counter++;
+    }
+  }
+}
+
+/*
+
+
+
+
+
+
+
+
+
+A different but similar approach
+*/
 class Node {
   constructor(key, value, next = null, prev = null) {
     this.key = key;
