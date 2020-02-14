@@ -172,6 +172,7 @@ You can require a:
 - Min Stack with Constant Time Operations (E) BLOOMBERG QUESTION
 - First Unique Number in Constant Time (M) BLOOMBERG QUESTION
 - Insert Delete GetRandom O(1)(M) BLOOMBERG QUESTION
+- Binary Search Tree Iterator (M) BLOOMBERG QUESTION
 
 ### Bloomberg Questions by Frequency
 
@@ -212,6 +213,7 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [Generate Parentheses](gameTheory/generateParens.js)
 [Merge Two Sorted Lists](linkedLists/mergeSortedLists.js)
 [Intersection of Two Sorted Lists](linkedLists/doTheyMerge.js)
+[BST Iterator](designQuestions/BSTiterator.js)
 [Validate BST](binaryTrees/validateBST.js)
 [Permutations](arrays/allPermutations.js)
 [Coin Change](dynamicProgramming/coinChange.js)
