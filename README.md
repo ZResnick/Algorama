@@ -51,6 +51,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Odds and Evens (M) BLOOMBERG QUESTION
 - Flatten a Multilevel Doubly Linked List (M) BLOOMBERG QUESTION
 - Insert Into a Sorted Cyclical List (M) BLOOMBERG QUESTION
+- Copy List With Random Pointer (M) BLOOMBERG QUESTION
 
 ### Array Manipulation
 
@@ -188,6 +189,7 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [Insert Delete GetRandom O(1)](designQuestions/insertDeleteGettRandomConstantTime.js)
 [Word Break](dynamicProgramming/wordBreak.js)
 [Populating Next Right Pointer](binaryTrees/populatingNextRightPointers.js)
+[Copy List With Random Pointers](linkedLists/copyListWithRandomPointer.js)
 [Valid Triangles](arrays/validTriangles.js)
 [Remove All Duplicates in a String II](stringManipulation/removeKDuplicates.js)
 [Kill Process](graphs/killProcess.js)
