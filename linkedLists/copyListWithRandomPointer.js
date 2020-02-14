@@ -61,3 +61,5 @@ var copyRandomList = function(head) {
 
   return newHead;
 };
+
+//fot test cases see: https://leetcode.com/problems/copy-list-with-random-pointer/
