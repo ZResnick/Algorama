@@ -100,6 +100,7 @@ You can require a BST creator from ./treeCreator for testing purposes using ----
 - Flatten a Binary Tree (E) BLOOMBERG QUESTION
 - Invert a Binary Tree (E)
 - Populating Next Right Pointer (M) BLOOMBERG QUESTION
+- Binary Tree Vertical Order Traversal (M) BLOOMBERG QUESTION
 
 ### Recursion, Backtracking, Game Theory
 
@@ -203,7 +204,8 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [Add Two Numbers](linkedLists/addTwoNumbers.js)
 [Move Zeroes](arrays/moveZerosToEnd.js)
 [Pair Sum](arrays/pairSum.js)
-[Odds and Evens](linkedLists/oddsAndEvens.js)
+[Odds and Evens Linked List](linkedLists/oddsAndEvens.js)
+[Binary Tree Vertical Order Traversal](binaryTrees/BTVerticalOrderTraversal.js)
 [First Unique Character In A String](stringManipulation/firstUniqueCharacter.js)
 [Insert Into a Sorted Cyclical List](linkedLists/insertIntoSortedCircularList.js)
 [Longest Uncommon Sub String](stringManipulation/longestSubstring.js)
