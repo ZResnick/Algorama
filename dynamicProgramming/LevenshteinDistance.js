@@ -26,6 +26,18 @@ enention -> exention (replace 'n' with 'x')
 exention -> exection (replace 'n' with 'c')
 exection -> execution (insert 'u')
 
+
+Approach:
+Given 'horse' and 'ros'
+   '' h  o  r  s  e
+'' 0  1  2  3  4  5
+r  1  1  2  2  3  4
+o  2  2  1  2  3  4
+s  3  3  2  2  2  3
+
+if the letter is the same, immediately take the number top left of it
+if the letter isn't the same, add one to Math.min(top, left, top-left)
+return the bottom right corner
 */
 
 const levenshteinDistance = (str1, str2) => {
