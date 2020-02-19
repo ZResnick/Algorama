@@ -27,7 +27,6 @@ var twoCitySchedCost = function(costs) {
     return arr[0] - arr[1];
   };
   costs.sort((a, b) => moneyLost(a) - moneyLost(b));
-
   let totalCost = 0;
   for (let i = 0, j = costs.length / 2; j < costs.length; i++, j++) {
     totalCost += costs[i][0] + costs[j][1];

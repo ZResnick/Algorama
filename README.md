@@ -34,6 +34,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Remove All Duplicates in a String (M) BLOOMBERG QUESTION
 - Duplicate Values First (M) BLOOMBERG QUESTION
 - Find and Replace in String (M) SIMON DATA QUESTION
+- Sort String by Character Frequency (M) - BLOOMBERG QUESTION
 
 ### Linked Lists
 
@@ -206,6 +207,7 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 [Pair Sum](arrays/pairSum.js)
 [Odds and Evens Linked List](linkedLists/oddsAndEvens.js)
 [Binary Tree Vertical Order Traversal](binaryTrees/BTVerticalOrderTraversal.js)
+[Sort String by Character Frequency](stringManipulation/sortStringByFrequency.js)
 [First Unique Character In A String](stringManipulation/firstUniqueCharacter.js)
 [Insert Into a Sorted Cyclical List](linkedLists/insertIntoSortedCircularList.js)
 [Longest Uncommon Sub String](stringManipulation/longestSubstring.js)
