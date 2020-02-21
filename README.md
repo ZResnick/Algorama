@@ -127,6 +127,7 @@ You can require a Weighted Non-Directed Graph Constructor for testing purposes u
 - All Paths from Start to End in an Acyclic Graph (M) BLOOMBERG QUESTION
 - Keys and Rooms - Can you Escape?? (M) SIMON DATA
 - Kill Process (M) BLOOMBERG QUESTION
+- Walls and Gates (M) BLOOMBERG QUESTION
 
 ### Dynamic Programming
 
@@ -238,3 +239,4 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 
 Frequency not listed:
 [First Unique Character in Constant Time](designQuestions/firstUniqueNumber.js)
+[Walls and Gates](graphs/wallsAndGates.js)

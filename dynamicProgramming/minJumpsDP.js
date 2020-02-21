@@ -25,7 +25,10 @@ const minJumps = arr => {
   //run though the elements of the array
   for (let i = 0; i < arr.length; i++) {
     //if the last el of the dp array ahs been changed, return it.
-    if (dp[arr.length - 1] < Infinity) return dp[arr.length - 1];
+    if (dp[arr.length - 1] < Infinity) {
+      console.log(dp);
+      return dp[arr.length - 1];
+    }
     //store the jump range
     let curJump = arr[i];
     //store the current dp value at that place
@@ -37,25 +40,27 @@ const minJumps = arr => {
       if (minJumpsToPlace + 1 < dp[j]) dp[j] = minJumpsToPlace + 1;
     }
   }
-
+  console.log(dp);
   //return the last element
   return dp[arr.length - 1];
 };
 
-const test1 = [1, 1];
-const test2 = [6, 3, 2, 1];
-const test3 = [2, 8, 4, 3, 2, 9, 6, 8];
-const test4 = [4, 4, 2, 7, 1, 1, 1, 1, 3, 7, 2];
-const test5 = [2, 4, 1, 1, 2, 3, 7, 1, 1, 3];
-const test6 = [2, 4, 1, 1, 2, 3, 7, 1, 1, 3, 1, 1, 1, 1, 1, 17];
-const test7 = [16, 4, 1, 1, 2, 3, 7, 1, 1, 3];
-const test10 = [1, 3, 1, 1, 1, 1];
+// const test1 = [1, 1];
+// const test2 = [6, 3, 2, 1];
+// const test3 = [2, 8, 4, 3, 2, 9, 6, 8];
+// const test4 = [4, 4, 2, 7, 1, 1, 1, 1, 3, 7, 2];
+// const test5 = [2, 4, 1, 1, 2, 3, 7, 1, 1, 3];
+// const test6 = [2, 4, 1, 1, 2, 3, 7, 1, 1, 3, 1, 1, 1, 1, 1, 17];
+// const test7 = [16, 4, 1, 1, 2, 3, 7, 1, 1, 3];
+// const test10 = [1, 3, 1, 1, 1, 1];
+const test11 = [4, 2, 1, 3, 1, 1, 2, 4, 1, 1];
 
-console.log('1---------->', minJumps(test1));
-console.log('1---------->', minJumps(test2));
-console.log('2---------->', minJumps(test3));
-console.log('2---------->', minJumps(test4));
-console.log('4---------->', minJumps(test5));
-console.log('6---------->', minJumps(test6));
-console.log('1---------->', minJumps(test7));
-console.log('3---------->', minJumps(test10));
+// console.log('1---------->', minJumps(test1));
+// console.log('1---------->', minJumps(test2));
+// console.log('2---------->', minJumps(test3));
+// console.log('2---------->', minJumps(test4));
+// console.log('4---------->', minJumps(test5));
+// console.log('6---------->', minJumps(test6));
+// console.log('1---------->', minJumps(test7));
+// console.log('3---------->', minJumps(test10));
+console.log('3---------->', minJumps(test11));
