@@ -35,6 +35,7 @@ This repo is built for algorithm problems and practice, with the main goal being
 - Duplicate Values First (M) BLOOMBERG QUESTION
 - Find and Replace in String (M) SIMON DATA QUESTION
 - Sort String by Character Frequency (M) - BLOOMBERG QUESTION
+- All Anagrams in Two Strings (M) - BLOOMBERG QUESTION
 
 ### Linked Lists
 
@@ -240,3 +241,4 @@ See all the questions here: https://leetcode.com/company/bloomberg/
 Frequency not listed:
 [First Unique Character in Constant Time](designQuestions/firstUniqueNumber.js)
 [Walls and Gates](graphs/wallsAndGates.js)
+[All Anagrams](stringManipulation/allAnagrams.js)
